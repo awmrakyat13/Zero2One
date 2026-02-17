@@ -110,7 +110,7 @@ const engagements = [
   },
   {
     slug: "confidential-developer",
-    company: "Confidential Real Estate Developer",
+    company: "Large Scale Property Developer",
     industry: "Real Estate Development",
     orgType: "Mid-to-large institutional enterprise",
     scale: "Multi-department leadership structure",
