@@ -89,7 +89,7 @@ export default function ImpactPage() {
           <p className="text-[var(--color-text-muted)] text-lg mb-8">Tell us yours. We'll tell you honestly if and how we can help.</p>
           <Link
             to="/#contact"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-text)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent)] transition-colors"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent-light)] transition-colors"
           >
             Speak With Us <ArrowRight size={16} />
           </Link>

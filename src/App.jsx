@@ -84,7 +84,7 @@ function Navigation() {
             <Link to="/impact" className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Impact</Link>
             <button onClick={() => scrollToSection('approach')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Approach</button>
             <button onClick={() => scrollToSection('collective')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Collective</button>
-            <button onClick={() => scrollToSection('contact')} className="px-5 py-2 bg-[var(--color-text)] text-[var(--color-bg)] text-sm hover:bg-[var(--color-accent)] transition-colors">
+            <button onClick={() => scrollToSection('contact')} className="px-5 py-2 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm hover:bg-[var(--color-accent-light)] transition-colors">
               Contact Us
             </button>
           </div>
@@ -156,17 +156,17 @@ function HomePage() {
             </h1>
             <div className="flex flex-wrap items-center gap-y-2 text-sm md:text-base text-[var(--color-text-muted)] mb-12 opacity-0 fade-in delay-100 tracking-wide">
               <span>Strategic Advisory</span>
-              <span className="mx-3 w-px h-4 bg-[var(--color-border)] inline-block" />
+              <span className="mx-3 w-px h-4 bg-[var(--color-accent)] opacity-30 inline-block" />
               <span>Organisational Design</span>
-              <span className="mx-3 w-px h-4 bg-[var(--color-border)] inline-block" />
+              <span className="mx-3 w-px h-4 bg-[var(--color-accent)] opacity-30 inline-block" />
               <span>Operational Consulting</span>
-              <span className="mx-3 w-px h-4 bg-[var(--color-border)] inline-block" />
+              <span className="mx-3 w-px h-4 bg-[var(--color-accent)] opacity-30 inline-block" />
               <span>Training Consulting</span>
-              <span className="mx-3 w-px h-4 bg-[var(--color-border)] inline-block" />
+              <span className="mx-3 w-px h-4 bg-[var(--color-accent)] opacity-30 inline-block" />
               <span>Leadership &amp; Capability Development</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 opacity-0 fade-in delay-200">
-              <Link to="/impact" className="group px-8 py-4 bg-[var(--color-text)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent)] transition-colors inline-flex items-center gap-3">
+              <Link to="/impact" className="group px-8 py-4 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent-light)] transition-colors inline-flex items-center gap-3">
                 Explore Our Work <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
               </Link>
               <button onClick={() => scrollToSection('contact')} className="px-8 py-4 border border-[var(--color-border)] text-sm tracking-wide hover:border-[var(--color-text)] transition-colors">
@@ -248,7 +248,7 @@ function HomePage() {
                 >
                   <div className={`flip-card-inner relative w-full h-full ${flippedCard === index ? 'flipped' : ''}`}>
                     {/* Front */}
-                    <div className="flip-card-front absolute inset-0 bg-[var(--color-bg)] border border-[var(--color-border)] p-8 flex flex-col justify-center hover:border-[var(--color-accent)] transition-colors">
+                    <div className="flip-card-front absolute inset-0 bg-[var(--color-bg)] border border-[var(--color-border)] border-t-2 border-t-[var(--color-accent)] p-8 flex flex-col justify-center hover:border-[var(--color-accent)] transition-colors">
                       <div className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-4">{engagement.industry}</div>
                       <h4 className="font-serif text-2xl">{engagement.company}</h4>
                     </div>
@@ -284,7 +284,7 @@ function HomePage() {
           <div className="grid md:grid-cols-4 gap-8 mb-16">
             {["Diagnostic", "Alignment", "Implementation", "Transfer of Ownership"].map((step, i) => (
               <div key={i} className="relative">
-                <div className="text-xs text-[var(--color-text-muted)] mb-3 tracking-widest uppercase">{String(i + 1).padStart(2, '0')}</div>
+                <div className="text-xs text-[var(--color-warm)] mb-3 tracking-widest uppercase">{String(i + 1).padStart(2, '0')}</div>
                 <h3 className="font-serif text-xl mb-2">{step}</h3>
                 {i < 3 && <div className="hidden md:block absolute top-8 right-0 w-8 border-t border-[var(--color-border)]" />}
               </div>
@@ -317,7 +317,7 @@ function HomePage() {
           <div className="grid md:grid-cols-2 gap-8">
             {team.map((member, index) => (
               <div key={index} className="bg-[var(--color-bg)] border border-[var(--color-border)] p-8 flex gap-6">
-                <div className="shrink-0 w-16 h-16 bg-[var(--color-text)] text-[var(--color-bg)] flex items-center justify-center text-sm font-medium tracking-wide">
+                <div className="shrink-0 w-16 h-16 bg-[var(--color-accent)] text-[var(--color-bg)] flex items-center justify-center text-sm font-medium tracking-wide">
                   {member.initials}
                 </div>
                 <div className="min-w-0">
@@ -414,7 +414,7 @@ function HomePage() {
                     <label htmlFor="message" className="block text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-2">How can we help? *</label>
                     <textarea id="message" rows={4} value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full px-0 py-3 bg-transparent border-0 border-b border-[var(--color-border)] text-sm focus:outline-none focus:border-[var(--color-text)] transition-colors resize-none" />
                   </div>
-                  <button onClick={handleSubmit} className="px-8 py-4 bg-[var(--color-text)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent)] transition-colors">
+                  <button onClick={handleSubmit} className="px-8 py-4 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent-light)] transition-colors">
                     Start a Conversation
                   </button>
                 </div>
@@ -438,7 +438,7 @@ export default function App() {
         <Route path="/impact" element={<ImpactPage />} />
         <Route path="/impact/:slug" element={<CaseStudyPage />} />
       </Routes>
-      <footer className="border-t border-[var(--color-border)] py-10 px-6">
+      <footer className="border-t-2 border-t-[var(--color-accent)] py-10 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[var(--color-text-muted)]">
           <p>&copy; 2025 Zero2One Consulting. All rights reserved.</p>
           <p>Bengaluru, India</p>

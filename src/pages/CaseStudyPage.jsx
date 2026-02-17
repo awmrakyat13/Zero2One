@@ -139,7 +139,7 @@ export default function CaseStudyPage() {
             {engagement.interventionArchitecture.map((item, i) => (
               <div key={i} className="grid md:grid-cols-3 gap-6">
                 <div className="md:col-span-1">
-                  <div className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-2">{String(i + 1).padStart(2, '0')}</div>
+                  <div className="text-xs tracking-widest uppercase text-[var(--color-warm)] mb-2">{String(i + 1).padStart(2, '0')}</div>
                   <h3 className="font-serif text-xl">{item.heading}</h3>
                 </div>
                 <div className="md:col-span-2">
@@ -202,7 +202,7 @@ export default function CaseStudyPage() {
           <p className="text-[var(--color-text-muted)] text-lg mb-8">Tell us what you're working on. We'll tell you honestly if and how we can help.</p>
           <Link
             to="/#contact"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-text)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent)] transition-colors"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent-light)] transition-colors"
           >
             Speak With Us <ArrowRight size={16} />
           </Link>
