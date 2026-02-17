@@ -152,7 +152,7 @@ function HomePage() {
         <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
           <div className="max-w-4xl">
             <h1 className="font-serif text-5xl md:text-7xl leading-[1.1] mb-8 opacity-0 fade-in">
-              Build Organizations That Run Without Constant Intervention.
+              Where Strategy Becomes Structure.
             </h1>
             <p className="text-lg md:text-xl text-[var(--color-text-muted)] mb-12 opacity-0 fade-in delay-100 tracking-wide">
               Strategy. Structure. Leadership. Narrative.
