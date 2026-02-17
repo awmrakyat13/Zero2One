@@ -166,9 +166,9 @@ function HomePage() {
               <span>Leadership &amp; Capability Development</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 opacity-0 fade-in delay-200">
-              <button onClick={() => scrollToSection('offerings')} className="group px-8 py-4 bg-[var(--color-text)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent)] transition-colors inline-flex items-center gap-3">
+              <Link to="/impact" className="group px-8 py-4 bg-[var(--color-text)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent)] transition-colors inline-flex items-center gap-3">
                 Explore Our Work <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
-              </button>
+              </Link>
               <button onClick={() => scrollToSection('contact')} className="px-8 py-4 border border-[var(--color-border)] text-sm tracking-wide hover:border-[var(--color-text)] transition-colors">
                 Speak With Us
               </button>
