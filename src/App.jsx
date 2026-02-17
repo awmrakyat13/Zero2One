@@ -84,7 +84,7 @@ function Navigation() {
             <button onClick={() => scrollToSection('approach')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Approach</button>
             <button onClick={() => scrollToSection('collective')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Collective</button>
             <button onClick={() => scrollToSection('contact')} className="px-5 py-2 bg-[var(--color-text)] text-[var(--color-bg)] text-sm hover:bg-[var(--color-accent)] transition-colors">
-              Speak With Us
+              Contact Us
             </button>
           </div>
           <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
