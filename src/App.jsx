@@ -3,6 +3,7 @@ import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Menu, X, Linkedin, ArrowRight, ChevronDown } from 'lucide-react';
 import services from './data/services';
 import ServicePage from './pages/ServicePage';
+import engagements from './data/engagements';
 import ImpactPage from './pages/ImpactPage';
 import CaseStudyPage from './pages/CaseStudyPage';
 
@@ -213,6 +214,40 @@ function HomePage() {
                 )}
               </div>
             ))}
+          </div>
+
+          {/* Case Studies */}
+          <div className="mt-16 border-t border-[var(--color-border)] pt-16">
+            <div className="flex justify-between items-end mb-10">
+              <div>
+                <h3 className="font-serif text-3xl md:text-4xl mb-2">Case Studies</h3>
+                <p className="text-[var(--color-text-muted)]">Structure applied. Outcomes delivered.</p>
+              </div>
+              <Link to="/impact" className="hidden md:inline-flex items-center gap-2 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
+                View all <ArrowRight size={14} />
+              </Link>
+            </div>
+            <div className="space-y-0">
+              {engagements.map((engagement) => (
+                <Link
+                  key={engagement.slug}
+                  to={`/impact/${engagement.slug}`}
+                  className="block py-6 border-b border-[var(--color-border)] group"
+                >
+                  <div className="flex justify-between items-start gap-4">
+                    <div>
+                      <div className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-2">{engagement.industry}</div>
+                      <h4 className="font-serif text-xl md:text-2xl mb-1 group-hover:text-[var(--color-accent)] transition-colors">{engagement.company}</h4>
+                      <p className="text-[var(--color-text-muted)] text-sm leading-relaxed">{engagement.impactStatement}</p>
+                    </div>
+                    <ArrowRight size={16} className="text-[var(--color-text-muted)] group-hover:text-[var(--color-accent)] transition-colors shrink-0 mt-2" />
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <Link to="/impact" className="md:hidden inline-flex items-center gap-2 mt-6 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
+              View all engagements <ArrowRight size={14} />
+            </Link>
           </div>
         </div>
       </section>
