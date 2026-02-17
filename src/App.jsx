@@ -3,6 +3,8 @@ import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Menu, X, Linkedin, ArrowRight, ChevronDown } from 'lucide-react';
 import services from './data/services';
 import ServicePage from './pages/ServicePage';
+import ImpactPage from './pages/ImpactPage';
+import CaseStudyPage from './pages/CaseStudyPage';
 
 const team = [
   {
@@ -78,6 +80,7 @@ function Navigation() {
           </Link>
           <div className="hidden md:flex gap-10 items-center text-sm">
             <button onClick={() => scrollToSection('offerings')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Services</button>
+            <Link to="/impact" className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Impact</Link>
             <button onClick={() => scrollToSection('approach')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Approach</button>
             <button onClick={() => scrollToSection('collective')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Collective</button>
             <button onClick={() => scrollToSection('contact')} className="px-5 py-2 bg-[var(--color-text)] text-[var(--color-bg)] text-sm hover:bg-[var(--color-accent)] transition-colors">
@@ -91,6 +94,7 @@ function Navigation() {
         {mobileMenuOpen && (
           <div className="md:hidden mt-6 pb-4 space-y-4 text-sm fade-in">
             <button onClick={() => scrollToSection('offerings')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Services</button>
+            <Link to="/impact" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Impact</Link>
             <button onClick={() => scrollToSection('approach')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Approach</button>
             <button onClick={() => scrollToSection('collective')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Collective</button>
             <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Contact</button>
@@ -374,6 +378,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/services/:slug" element={<ServicePage />} />
+        <Route path="/impact" element={<ImpactPage />} />
+        <Route path="/impact/:slug" element={<CaseStudyPage />} />
       </Routes>
       <footer className="border-t border-[var(--color-border)] py-10 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[var(--color-text-muted)]">
