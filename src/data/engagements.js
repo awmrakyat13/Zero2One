@@ -2,45 +2,56 @@ const engagements = [
   {
     slug: "nikara-realty",
     company: "Nikara Realty",
-    industry: "Real Estate",
-    orgType: "Family-promoted developer transitioning to professional management",
-    scale: "~200 employees across 4 active projects",
-    engagementFocus: "Governance Architecture & Role Clarity",
-    impactStatement: "Replaced founder-dependent decision-making with a governance system that held across 4 concurrent projects.",
-    triggerMoment: "Nikara's founding family had scaled from one residential project to four simultaneous developments in under three years. Growth exposed what informality had hidden — overlapping mandates between site leads, no escalation protocols, and a founder who remained the single point of approval for decisions that should have been routine. Project timelines began slipping not because of execution gaps, but because the organization couldn't make decisions at the speed the business demanded.",
+    industry: "B2C Real Estate Intermediary",
+    orgType: "Lead-driven buyer–seller matching",
+    scale: "Founder-led, growth-phase — Bengaluru",
+    engagementFocus: "Organizational Architecture & Governance Installation",
+    impactStatement: "Transitioned a founder-led real estate intermediary from personality-driven execution to documented operating structure.",
+    triggerMoment: "The organization was operating on a founder-built foundation with increasing lead volume, team expansion, and rising coordination complexity.",
     structuralFrictions: [
-      "Decision authority concentrated entirely with the founder, creating a bottleneck across all four project sites",
-      "Site leads operated with ambiguous mandates — no clarity on what they owned vs. what required escalation",
-      "No governance rhythm: weekly reviews were ad hoc, monthly reporting was inconsistent, and quarterly planning didn't exist",
-      "Cross-functional coordination between procurement, construction, and sales happened through informal channels that broke under load",
-      "New hires at the mid-management level had no onboarding into how decisions were actually made"
+      "Role ambiguity across BD, Sales, Analytics, and HR",
+      "Founder dependency for performance oversight",
+      "No formal governance cadence (MBR/QBR)",
+      "CRM hygiene inconsistencies and duplicate lead leakage",
+      "Unstructured follow-up discipline across sales stages",
+      "Limited employee engagement mechanisms",
+      "Absence of formal KPIs tied to workflow stages"
     ],
+    structuralFrictionSummary: "Operational effort was high. Structural clarity was low.",
+    interventionPreamble: "The engagement focused on installing operating architecture rather than isolated process fixes.",
     interventionArchitecture: [
       {
-        heading: "Decision Rights Mapping",
-        body: "Catalogued every recurring decision type across construction, procurement, sales, and finance. Assigned clear ownership at three tiers — site-level autonomy, functional-head approval, and founder-level strategic decisions. Reduced founder-touch decisions by approximately 60%."
+        heading: "Organizational Design",
+        body: "Role-wise JD / KRA / KPI definition. Daily, weekly, and long-term objective mapping. Functional accountability alignment."
       },
       {
-        heading: "Governance Cadence Design",
-        body: "Installed a structured operating rhythm — weekly site standups, fortnightly cross-functional syncs, monthly business reviews, and quarterly strategy sessions. Each cadence had a defined agenda template, owner, and escalation path."
+        heading: "Governance & Performance Systems",
+        body: "Weekly Functional Review framework. Monthly Business Review (MBR) structure. Quarterly Business Review (QBR) template. KPI dashboard architecture across functions."
       },
       {
-        heading: "Role Architecture Redesign",
-        body: "Rewrote mandate documents for all site leads and functional heads. Defined boundaries, interdependencies, and the specific outcomes each role was accountable for — replacing inherited job descriptions with operational mandates."
+        heading: "Workflow & Sales Architecture",
+        body: "Lead-to-closure stage mapping. Defined ownership per stage. Qualification scoring logic. Time-to-contact benchmarks. Drop-off monitoring metrics."
       },
       {
-        heading: "Escalation Protocol",
-        body: "Designed a tiered escalation framework with clear thresholds — financial, timeline, and quality triggers that determined when a decision moved up. Eliminated the ambiguity that had been routing everything to the founder."
+        heading: "Data & Control",
+        body: "CRM cleanup roadmap. Duplicate control targets. Lead scoring model integration plan."
+      },
+      {
+        heading: "People & Engagement Systems",
+        body: "30/45-day Pulse Survey framework. Stay Interview structure for retention insight. Career progression mapping. Recognition rhythm integration."
       }
     ],
+    interventionFootnote: "Execution was phased through a structured 30-60-90 day plan.",
     whatChanged: [
-      "Founder involvement in day-to-day operational decisions reduced from ~80% to under 25%",
-      "Average decision cycle time on procurement approvals dropped from 9 days to 3",
-      "All four project sites adopted a unified governance rhythm within one quarter",
-      "Mid-management retention improved as role clarity reduced frustration and confusion",
-      "The organization completed its first quarterly strategy review with structured input from all site leads"
+      "Clearly defined functional ownership across departments",
+      "Structured performance review cadence",
+      "Quantified workflow visibility from lead capture to closure",
+      "Reduced founder dependency in day-to-day oversight",
+      "Formalized engagement and retention systems",
+      "Governance documentation enabling continuity during role transitions"
     ],
-    relatedCapabilities: ["clarify", "execute"]
+    whatChangedSummary: "The company transitioned from personality-driven execution to documented operating structure.",
+    relatedCapabilities: ["clarify", "execute", "align"]
   },
   {
     slug: "officesmart",

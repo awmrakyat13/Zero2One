@@ -116,13 +116,20 @@ export default function CaseStudyPage() {
               <li key={i} className="text-[var(--color-text-muted)] leading-relaxed">{friction}</li>
             ))}
           </ul>
+          {engagement.structuralFrictionSummary && (
+            <p className="mt-8 text-[var(--color-text-muted)] text-lg italic">{engagement.structuralFrictionSummary}</p>
+          )}
         </div>
       </section>
 
       {/* Intervention Architecture */}
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl mb-10">Intervention Architecture</h2>
+          <h2 className="font-serif text-3xl md:text-4xl mb-4">Intervention Architecture</h2>
+          {engagement.interventionPreamble && (
+            <p className="text-[var(--color-text-muted)] text-lg leading-relaxed mb-10">{engagement.interventionPreamble}</p>
+          )}
+          {!engagement.interventionPreamble && <div className="mb-6" />}
           <div className="space-y-10">
             {engagement.interventionArchitecture.map((item, i) => (
               <div key={i} className="grid md:grid-cols-3 gap-6">
@@ -136,6 +143,9 @@ export default function CaseStudyPage() {
               </div>
             ))}
           </div>
+          {engagement.interventionFootnote && (
+            <p className="mt-10 text-[var(--color-text-muted)] text-lg italic">{engagement.interventionFootnote}</p>
+          )}
         </div>
       </section>
 
@@ -148,6 +158,9 @@ export default function CaseStudyPage() {
               <li key={i} className="text-[var(--color-text-muted)] leading-relaxed">{outcome}</li>
             ))}
           </ul>
+          {engagement.whatChangedSummary && (
+            <p className="mt-8 text-[var(--color-text-muted)] text-lg italic">{engagement.whatChangedSummary}</p>
+          )}
         </div>
       </section>
 
