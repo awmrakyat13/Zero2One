@@ -109,47 +109,48 @@ const engagements = [
     relatedCapabilities: ["execute", "align", "clarify"]
   },
   {
-    slug: "sowparnika",
-    company: "Sowparnika",
-    industry: "Affordable Housing",
-    orgType: "Growth-stage developer scaling from regional to multi-state operations",
-    scale: "~500 employees, operations across 3 states",
-    engagementFocus: "Organizational Redesign & Strategic Documentation",
-    impactStatement: "Redesigned the organizational architecture to support multi-state expansion without losing operational coherence.",
-    triggerMoment: "Sowparnika had established a strong position in affordable housing within Karnataka. When the decision was made to expand into two additional states, the existing organizational structure — designed for a single-state operation — began to fracture. Functions that had worked through proximity and informal coordination couldn't scale across geographies. The leadership team recognized they needed to rebuild the organizational architecture before the expansion broke what was already working.",
+    slug: "confidential-developer",
+    company: "Confidential Real Estate Developer",
+    industry: "Real Estate Development",
+    orgType: "Mid-to-large institutional enterprise",
+    scale: "Multi-department leadership structure",
+    engagementFocus: "Organizational Architecture & Governance Alignment",
+    impactStatement: "Strengthened structural coherence across leadership, performance review, and accountability mechanisms without disrupting operational momentum.",
+    triggerMoment: "The organization was operating at scale with defined verticals, but structural alignment across leadership, performance review, and accountability mechanisms required consolidation.",
+    triggerMomentExtra: "Growth and complexity had introduced uneven clarity in role expectations and review discipline.",
     structuralFrictions: [
-      "Organizational structure was designed for single-state operations and couldn't accommodate multi-geography coordination",
-      "Functional heads were overloaded — managing both operational delivery and strategic expansion simultaneously",
-      "No documented processes for critical workflows, making it impossible to replicate operations in new states",
-      "Communication between headquarters and new state offices was ad hoc, creating information asymmetry",
-      "The founder's direct involvement was required for decisions that should have been delegated to state-level leadership"
+      "Variability in role clarity across functions",
+      "Inconsistent performance review structure",
+      "Limited alignment between leadership objectives and operational metrics",
+      "KPI/KRA definitions not uniformly tied to business outcomes",
+      "Governance cadence lacking formal documentation"
     ],
+    structuralFrictionSummary: "Execution was present. Alignment and measurement required strengthening.",
+    interventionPreamble: "The engagement focused on structural alignment at leadership and performance levels.",
     interventionArchitecture: [
       {
-        heading: "Organizational Structure Redesign",
-        body: "Designed a hub-and-spoke model with a lean central office handling strategy, governance, and shared services, while state-level units operated with defined autonomy for project delivery. Each state head had a clear mandate with standardized reporting lines and decision authority."
+        heading: "Organizational Design & Governance",
+        body: "Structural mapping of leadership roles and reporting clarity. Governance rhythm refinement. Defined escalation pathways and review ownership."
       },
       {
-        heading: "Process Documentation & Codification",
-        body: "Documented the 14 critical business processes that needed to be replicated in new states — from land acquisition workflows to construction milestone tracking to customer handover protocols. Each process was codified with owners, SLAs, and quality checkpoints."
+        heading: "Performance Architecture",
+        body: "KPI and KRA engineering across functions. Alignment of metrics to strategic objectives. Structured performance review framework design. Installation of review cadence across departments."
       },
       {
-        heading: "Strategic Communication Architecture",
-        body: "Built the internal and external documentation infrastructure for the expansion — board presentations, investor updates, state-level business plans, and institutional reports that codified Sowparnika's operational model for new stakeholders and regulatory contexts."
-      },
-      {
-        heading: "Leadership Mandate Restructuring",
-        body: "Restructured the senior leadership team's mandates to separate operational delivery from strategic growth. Created dedicated roles for expansion leadership, freeing existing functional heads to focus on execution in the core market."
+        heading: "Leadership Alignment",
+        body: "Clarification of objective ownership. Cross-functional alignment around measurable outcomes. Standardization of performance expectations."
       }
     ],
+    interventionFootnote: "The work emphasized institutional discipline and metric coherence.",
     whatChanged: [
-      "Multi-state organizational structure operational within one quarter, with clear decision authority at each level",
-      "14 critical business processes documented and ready for replication — reducing new-state setup time significantly",
-      "Founder's operational involvement reduced to strategic governance, freeing capacity for growth-focused decisions",
-      "State-level leadership empowered with defined mandates, reducing headquarters dependency",
-      "Institutional documentation — board decks, investor reports, process manuals — established a professional operating standard"
+      "Clearer leadership accountability across departments",
+      "Formalized performance review architecture",
+      "Defined KPI/KRA alignment with business objectives",
+      "Improved governance consistency",
+      "Reduced ambiguity in objective ownership"
     ],
-    relatedCapabilities: ["clarify", "articulate"]
+    whatChangedSummary: "The organization strengthened structural coherence without disrupting operational momentum.",
+    relatedCapabilities: ["clarify", "align", "execute"]
   }
 ];
 
