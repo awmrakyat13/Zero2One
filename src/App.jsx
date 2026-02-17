@@ -108,6 +108,7 @@ function Navigation() {
 
 function HomePage() {
   const [expandedCard, setExpandedCard] = useState(null);
+  const [flippedCard, setFlippedCard] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -227,22 +228,35 @@ function HomePage() {
                 View all <ArrowRight size={14} />
               </Link>
             </div>
-            <div className="space-y-0">
-              {engagements.map((engagement) => (
-                <Link
+            <div className="grid md:grid-cols-3 gap-6">
+              {engagements.map((engagement, index) => (
+                <div
                   key={engagement.slug}
-                  to={`/impact/${engagement.slug}`}
-                  className="block py-6 border-b border-[var(--color-border)] group"
+                  className="flip-card h-56 cursor-pointer"
+                  onClick={() => setFlippedCard(flippedCard === index ? null : index)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => e.key === 'Enter' && setFlippedCard(flippedCard === index ? null : index)}
                 >
-                  <div className="flex justify-between items-start gap-4">
-                    <div>
-                      <div className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-2">{engagement.industry}</div>
-                      <h4 className="font-serif text-xl md:text-2xl mb-1 group-hover:text-[var(--color-accent)] transition-colors">{engagement.company}</h4>
-                      <p className="text-[var(--color-text-muted)] text-sm leading-relaxed">{engagement.impactStatement}</p>
+                  <div className={`flip-card-inner relative w-full h-full ${flippedCard === index ? 'flipped' : ''}`}>
+                    {/* Front */}
+                    <div className="flip-card-front absolute inset-0 bg-[var(--color-bg)] border border-[var(--color-border)] p-8 flex flex-col justify-center hover:border-[var(--color-accent)] transition-colors">
+                      <div className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-4">{engagement.industry}</div>
+                      <h4 className="font-serif text-2xl">{engagement.company}</h4>
                     </div>
-                    <ArrowRight size={16} className="text-[var(--color-text-muted)] group-hover:text-[var(--color-accent)] transition-colors shrink-0 mt-2" />
+                    {/* Back */}
+                    <div className="flip-card-back absolute inset-0 bg-[var(--color-text)] text-[var(--color-bg)] border border-[var(--color-text)] p-8 flex flex-col justify-between">
+                      <p className="text-sm leading-relaxed text-[#ccc]">{engagement.impactStatement}</p>
+                      <Link
+                        to={`/impact/${engagement.slug}`}
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center gap-2 text-sm text-[var(--color-accent-light)] hover:text-[var(--color-bg)] transition-colors"
+                      >
+                        Read More <ArrowRight size={14} />
+                      </Link>
+                    </div>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
             <Link to="/impact" className="md:hidden inline-flex items-center gap-2 mt-6 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
