@@ -154,9 +154,17 @@ function HomePage() {
             <h1 className="font-serif text-5xl md:text-7xl leading-[1.1] mb-8 opacity-0 fade-in">
               Where Strategy Becomes Structure.
             </h1>
-            <p className="text-lg md:text-xl text-[var(--color-text-muted)] mb-12 opacity-0 fade-in delay-100 tracking-wide">
-              Strategy. Structure. Leadership. Narrative.
-            </p>
+            <div className="flex flex-wrap items-center gap-y-2 text-sm md:text-base text-[var(--color-text-muted)] mb-12 opacity-0 fade-in delay-100 tracking-wide">
+              <span>Strategic Advisory</span>
+              <span className="mx-3 w-px h-4 bg-[var(--color-border)] inline-block" />
+              <span>Organisational Design</span>
+              <span className="mx-3 w-px h-4 bg-[var(--color-border)] inline-block" />
+              <span>Operational Consulting</span>
+              <span className="mx-3 w-px h-4 bg-[var(--color-border)] inline-block" />
+              <span>Training Consulting</span>
+              <span className="mx-3 w-px h-4 bg-[var(--color-border)] inline-block" />
+              <span>Leadership &amp; Capability Development</span>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 opacity-0 fade-in delay-200">
               <button onClick={() => scrollToSection('offerings')} className="group px-8 py-4 bg-[var(--color-text)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent)] transition-colors inline-flex items-center gap-3">
                 Explore Our Work <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
