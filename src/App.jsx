@@ -1,48 +1,8 @@
 import { useState } from 'react';
+import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Menu, X, Linkedin, ArrowRight, ChevronDown } from 'lucide-react';
-
-const offerings = [
-  {
-    title: "Clarify",
-    summary: "Organizational design, role clarity, strategy-to-execution alignment.",
-    details: [
-      "Organizational structure redesign",
-      "Role definition and mandate mapping",
-      "Strategic planning and goal cascading",
-      "Decision rights and accountability frameworks"
-    ]
-  },
-  {
-    title: "Align",
-    summary: "Leadership capability, performance systems, operating rhythm.",
-    details: [
-      "Leadership assessment and development",
-      "Performance management architecture",
-      "Operating cadence and review systems",
-      "Cross-functional alignment protocols"
-    ]
-  },
-  {
-    title: "Execute",
-    summary: "Operations architecture, workflow optimization, governance design.",
-    details: [
-      "Process design and workflow engineering",
-      "Governance and escalation frameworks",
-      "Operational dashboards and reporting",
-      "Implementation oversight and course correction"
-    ]
-  },
-  {
-    title: "Articulate",
-    summary: "Strategic writing, executive communication, institutional narrative.",
-    details: [
-      "Executive ghostwriting and thought leadership",
-      "Board presentations and institutional reports",
-      "Policy documentation and SOPs",
-      "Brand narrative and positioning documents"
-    ]
-  }
-];
+import services from './data/services';
+import ServicePage from './pages/ServicePage';
 
 const team = [
   {
@@ -95,8 +55,53 @@ const writingServices = [
   "Board & Institutional Documentation"
 ];
 
-export default function App() {
+function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
+  const scrollToSection = (id) => {
+    if (isHome) {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = `/#${id}`;
+    }
+    setMobileMenuOpen(false);
+  };
+
+  return (
+    <nav className="fixed w-full bg-[var(--color-bg)]/95 backdrop-blur-sm z-50 border-b border-[var(--color-border)]">
+      <div className="max-w-6xl mx-auto px-6 py-5">
+        <div className="flex justify-between items-center">
+          <Link to="/" className="font-serif text-2xl tracking-tight">
+            Zero2One
+          </Link>
+          <div className="hidden md:flex gap-10 items-center text-sm">
+            <button onClick={() => scrollToSection('offerings')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Services</button>
+            <button onClick={() => scrollToSection('approach')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Approach</button>
+            <button onClick={() => scrollToSection('collective')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Collective</button>
+            <button onClick={() => scrollToSection('contact')} className="px-5 py-2 bg-[var(--color-text)] text-[var(--color-bg)] text-sm hover:bg-[var(--color-accent)] transition-colors">
+              Speak With Us
+            </button>
+          </div>
+          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
+            {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
+        {mobileMenuOpen && (
+          <div className="md:hidden mt-6 pb-4 space-y-4 text-sm fade-in">
+            <button onClick={() => scrollToSection('offerings')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Services</button>
+            <button onClick={() => scrollToSection('approach')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Approach</button>
+            <button onClick={() => scrollToSection('collective')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Collective</button>
+            <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Contact</button>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+}
+
+function HomePage() {
   const [expandedCard, setExpandedCard] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
@@ -108,7 +113,6 @@ export default function App() {
 
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-    setMobileMenuOpen(false);
   };
 
   const handleSubmit = async () => {
@@ -135,36 +139,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen">
-      {/* Navigation */}
-      <nav className="fixed w-full bg-[var(--color-bg)]/95 backdrop-blur-sm z-50 border-b border-[var(--color-border)]">
-        <div className="max-w-6xl mx-auto px-6 py-5">
-          <div className="flex justify-between items-center">
-            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="font-serif text-2xl tracking-tight">
-              Zero2One
-            </button>
-            <div className="hidden md:flex gap-10 items-center text-sm">
-              <button onClick={() => scrollToSection('offerings')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Services</button>
-              <button onClick={() => scrollToSection('approach')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Approach</button>
-              <button onClick={() => scrollToSection('collective')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Collective</button>
-              <button onClick={() => scrollToSection('contact')} className="px-5 py-2 bg-[var(--color-text)] text-[var(--color-bg)] text-sm hover:bg-[var(--color-accent)] transition-colors">
-                Speak With Us
-              </button>
-            </div>
-            <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
-              {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
-            </button>
-          </div>
-          {mobileMenuOpen && (
-            <div className="md:hidden mt-6 pb-4 space-y-4 text-sm fade-in">
-              <button onClick={() => scrollToSection('offerings')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Services</button>
-              <button onClick={() => scrollToSection('approach')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Approach</button>
-              <button onClick={() => scrollToSection('collective')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Collective</button>
-              <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Contact</button>
-            </div>
-          )}
-        </div>
-      </nav>
+    <>
 
       {/* Hero */}
       <section className="min-h-screen flex items-center pt-20">
@@ -196,7 +171,7 @@ export default function App() {
             <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Four pillars of organizational excellence — each designed to compound on the others.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            {offerings.map((item, index) => (
+            {services.map((item, index) => (
               <div
                 key={index}
                 className="bg-[var(--color-bg)] border border-[var(--color-border)] p-8 hover:border-[var(--color-accent)] transition-colors cursor-pointer"
@@ -215,13 +190,22 @@ export default function App() {
                 </div>
                 <p className="text-[var(--color-text-muted)] leading-relaxed">{item.summary}</p>
                 {expandedCard === index && (
-                  <ul className="mt-6 space-y-2 fade-in">
-                    {item.details.map((detail, i) => (
-                      <li key={i} className="text-sm text-[var(--color-text-muted)] pl-4 border-l-2 border-[var(--color-accent)]">
-                        {detail}
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="fade-in">
+                    <ul className="mt-6 space-y-2">
+                      {item.offerings.slice(0, 4).map((detail, i) => (
+                        <li key={i} className="text-sm text-[var(--color-text-muted)] pl-4 border-l-2 border-[var(--color-accent)]">
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                    <Link
+                      to={`/services/${item.slug}`}
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center gap-2 mt-6 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors"
+                    >
+                      Learn more <ArrowRight size={14} />
+                    </Link>
+                  </div>
                 )}
               </div>
             ))}
@@ -379,7 +363,18 @@ export default function App() {
         </div>
       </section>
 
-      {/* Footer */}
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <div className="min-h-screen">
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/services/:slug" element={<ServicePage />} />
+      </Routes>
       <footer className="border-t border-[var(--color-border)] py-10 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[var(--color-text-muted)]">
           <p>&copy; 2025 Zero2One Consulting. All rights reserved.</p>
