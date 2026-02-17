@@ -358,7 +358,7 @@ function HomePage() {
                     <textarea id="message" rows={4} value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full px-0 py-3 bg-transparent border-0 border-b border-[var(--color-border)] text-sm focus:outline-none focus:border-[var(--color-text)] transition-colors resize-none" />
                   </div>
                   <button onClick={handleSubmit} className="px-8 py-4 bg-[var(--color-text)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent)] transition-colors">
-                    Book a Strategic Conversation
+                    Start a Conversation
                   </button>
                 </div>
               )}
