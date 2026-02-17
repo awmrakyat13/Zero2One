@@ -86,7 +86,7 @@ export default function CaseStudyPage() {
       <section className="pb-16 md:pb-24">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl mb-10">Context</h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-10">
+          <div className={`grid gap-8 mb-10 ${engagement.scale ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
             <div>
               <div className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-2">Industry</div>
               <div className="text-sm">{engagement.industry}</div>
@@ -95,14 +95,19 @@ export default function CaseStudyPage() {
               <div className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-2">Organization Type</div>
               <div className="text-sm">{engagement.orgType}</div>
             </div>
-            <div>
-              <div className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-2">Scale</div>
-              <div className="text-sm">{engagement.scale}</div>
-            </div>
+            {engagement.scale && (
+              <div>
+                <div className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-2">Scale</div>
+                <div className="text-sm">{engagement.scale}</div>
+              </div>
+            )}
           </div>
           <div className="border-t border-[var(--color-border)] pt-10">
             <h3 className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-4">What Prompted the Engagement</h3>
             <p className="text-[var(--color-text-muted)] text-lg leading-relaxed">{engagement.triggerMoment}</p>
+            {engagement.triggerMomentExtra && (
+              <p className="text-[var(--color-text-muted)] text-lg leading-relaxed mt-4">{engagement.triggerMomentExtra}</p>
+            )}
           </div>
         </div>
       </section>

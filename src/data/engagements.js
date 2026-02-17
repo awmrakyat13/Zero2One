@@ -56,45 +56,57 @@ const engagements = [
   {
     slug: "officesmart",
     company: "OfficeSmart",
-    industry: "B2B Distribution",
-    orgType: "Second-generation family business professionalizing operations",
-    scale: "~350 employees, 12 regional warehouses",
-    engagementFocus: "Performance Systems & Operating Cadence",
-    impactStatement: "Built a performance architecture that connected warehouse-floor metrics to boardroom strategy for the first time.",
-    triggerMoment: "OfficeSmart had operated successfully for two decades on relationships and institutional memory. As the second generation took over, they inherited a business with no performance measurement system, no standardized reporting, and no way to compare efficiency across 12 regional warehouses. The leadership transition surfaced a deeper problem — the organization had grown without building the operating infrastructure to manage that growth. Decisions were made on instinct, not data, and the new leadership had neither the tenure nor the trust to operate that way.",
+    industry: "Workplace Solutions / B2B Services",
+    orgType: "Growth-stage operating company",
+    scale: "",
+    engagementFocus: "Commercial Enablement & Operational Performance Architecture",
+    impactStatement: "Combined structural alignment with embedded execution support to move a growth-stage company from coordination-dependent execution to structured performance alignment.",
+    triggerMoment: "OfficeSmart was expanding its commercial activity while simultaneously refining internal execution, product experience, and team capability. Growth was visible, but structural consistency across sales, marketing, product, and delivery needed strengthening.",
+    triggerMomentExtra: "The engagement extended beyond advisory into embedded commercial and operational contribution.",
     structuralFrictions: [
-      "No standardized KPIs across warehouses — each regional head tracked different metrics in different formats",
-      "Performance conversations were annual and backward-looking, disconnected from operational reality",
-      "The leadership transition created a trust gap — new management lacked the institutional memory to make instinct-based decisions",
-      "Reporting flowed upward inconsistently, making it impossible to identify underperformance until it became a crisis",
-      "Regional heads operated as independent units with no benchmarking or cross-warehouse accountability"
+      "Inconsistent performance visibility across teams",
+      "B2B sales processes lacked structured qualification and stage clarity",
+      "Marketing efforts were not fully aligned with sales conversion flow",
+      "Product testing feedback loops were informal and unstructured",
+      "Decision ownership varied across functions",
+      "Operational coordination relied on informal alignment",
+      "Internship and new talent onboarding lacked structured integration"
     ],
+    structuralFrictionSummary: "Execution was active. Alignment and discipline required reinforcement.",
+    interventionPreamble: "The engagement combined structural alignment with hands-on execution support.",
     interventionArchitecture: [
       {
-        heading: "KPI Architecture Design",
-        body: "Designed a unified metrics framework spanning warehouse operations, logistics, sales, and finance. Each KPI was defined with a clear owner, data source, measurement frequency, and threshold for escalation. The framework was intentionally kept lean — 12 core metrics rather than an exhaustive dashboard."
+        heading: "Commercial & Sales Structuring",
+        body: "B2B sales engagement support and qualification discipline. Sales-stage clarity and structured client follow-through. Alignment of marketing messaging with commercial objectives."
       },
       {
-        heading: "Performance Review Cadence",
-        body: "Replaced the annual review cycle with a layered system — weekly operational huddles at each warehouse, monthly regional reviews comparing performance across locations, and quarterly strategic reviews connecting operational metrics to business outcomes."
+        heading: "Performance & Governance Architecture",
+        body: "KPI rationalization and performance visibility alignment. Installation of structured weekly and monthly review rhythm. Decision-right mapping and accountability clarity."
       },
       {
-        heading: "Cross-Warehouse Benchmarking",
-        body: "Built a benchmarking protocol that allowed leadership to compare warehouse performance on standardized dimensions — order accuracy, fulfillment speed, inventory turns, and cost per shipment. Created healthy internal competition with transparent data."
+        heading: "Product & Feedback Systems",
+        body: "Application testing and structured feedback documentation. Identification of user-experience friction points. Coordination between product refinement and operational delivery."
       },
       {
-        heading: "Leadership Operating Manual",
-        body: "Documented the operating system itself — how reviews work, what metrics matter, how escalations are handled, and what the expectations are at each management level. This became the institutional backbone that the new leadership could rely on instead of inherited instinct."
+        heading: "Capability & Talent Development",
+        body: "Initiation and oversight of internship program. Structured onboarding and role guidance. Integration of new contributors into delivery workflow."
+      },
+      {
+        heading: "Operational Coordination",
+        body: "Cross-functional handoff clarification. Bottleneck identification across execution stages. Strengthened delivery discipline across teams."
       }
     ],
+    interventionFootnote: "The engagement emphasized systemization, not surface-level process edits.",
     whatChanged: [
-      "All 12 warehouses reporting on unified metrics within two months of implementation",
-      "Leadership team conducting structured monthly reviews for the first time in the company's history",
-      "Underperforming warehouses identified and supported with targeted interventions rather than ad hoc pressure",
-      "Second-generation leadership operating with data-backed confidence, reducing dependency on legacy institutional memory",
-      "Order fulfillment accuracy improved across the network as measurement created visibility and accountability"
+      "Clearer commercial flow across B2B sales stages",
+      "Improved marketing-to-sales alignment",
+      "Structured performance visibility for leadership",
+      "Defined ownership in decision and execution stages",
+      "Formalized internship and capability integration",
+      "Strengthened coordination across commercial and operational teams"
     ],
-    relatedCapabilities: ["align", "execute"]
+    whatChangedSummary: "The organization moved from coordination-dependent execution to structured performance alignment.",
+    relatedCapabilities: ["execute", "align", "clarify"]
   },
   {
     slug: "sowparnika",
