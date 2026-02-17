@@ -55,13 +55,13 @@ const engagements = [
   },
   {
     slug: "officesmart",
-    company: "OfficeSmart",
+    company: "OfficeSmart.in",
     industry: "Workplace Solutions / B2B Services",
     orgType: "Growth-stage operating company",
     scale: "",
     engagementFocus: "Commercial Enablement & Operational Performance Architecture",
     impactStatement: "Combined structural alignment with embedded execution support to move a growth-stage company from coordination-dependent execution to structured performance alignment.",
-    triggerMoment: "OfficeSmart was expanding its commercial activity while simultaneously refining internal execution, product experience, and team capability. Growth was visible, but structural consistency across sales, marketing, product, and delivery needed strengthening.",
+    triggerMoment: "OfficeSmart.in was expanding its commercial activity while simultaneously refining internal execution, product experience, and team capability. Growth was visible, but structural consistency across sales, marketing, product, and delivery needed strengthening.",
     triggerMomentExtra: "The engagement extended beyond advisory into embedded commercial and operational contribution.",
     structuralFrictions: [
       "Inconsistent performance visibility across teams",
