@@ -75,7 +75,7 @@ const team = [
     slug: "uttam-shri-harsha",
     name: "Uttam Shri Harsha",
     credentials: "BE, MS, MBA, PMP",
-    role: "Founder & Principal",
+    role: "Founder, Operations & Organizational Design",
     bio: "Former Amazon, Newell Brands, and Toast. Has spent his career inside companies that were scaling fast and breaking things along the way. Founded Zero2One to help growing companies install the operating architecture that makes growth sustainable instead of chaotic.",
     initials: "UH",
     linkedin: "https://www.linkedin.com/in/uttam-s/",
