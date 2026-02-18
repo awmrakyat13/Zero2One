@@ -115,7 +115,7 @@ export default function CaseStudyPage() {
       {/* Structural Friction */}
       <section className="py-16 md:py-24 bg-[var(--color-bg-alt)]">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl mb-10">Structural Friction</h2>
+          <h2 className="font-serif text-3xl md:text-4xl mb-10">What Was Breaking</h2>
           <ul className="space-y-4 border-l-2 border-[var(--color-accent)] pl-6">
             {engagement.structuralFrictions.map((friction, i) => (
               <li key={i} className="text-[var(--color-text-muted)] leading-relaxed">{friction}</li>
@@ -130,7 +130,7 @@ export default function CaseStudyPage() {
       {/* Intervention Architecture */}
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl mb-4">Intervention Architecture</h2>
+          <h2 className="font-serif text-3xl md:text-4xl mb-4">What We Built</h2>
           {engagement.interventionPreamble && (
             <p className="text-[var(--color-text-muted)] text-lg leading-relaxed mb-10">{engagement.interventionPreamble}</p>
           )}
@@ -157,7 +157,7 @@ export default function CaseStudyPage() {
       {/* What Changed */}
       <section className="py-16 md:py-24 bg-[var(--color-bg-alt)]">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl mb-10">What Changed</h2>
+          <h2 className="font-serif text-3xl md:text-4xl mb-10">What's Different Now</h2>
           <ul className="space-y-4 border-l-2 border-[var(--color-accent)] pl-6">
             {engagement.whatChanged.map((outcome, i) => (
               <li key={i} className="text-[var(--color-text-muted)] leading-relaxed">{outcome}</li>

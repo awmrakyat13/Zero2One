@@ -53,7 +53,7 @@ export default function ImpactPage() {
       {/* Hero */}
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <h1 className="font-serif text-5xl md:text-6xl mb-4">Structure Changes Outcomes.</h1>
+          <h1 className="font-serif text-5xl md:text-6xl mb-4">What happens when the structure actually works.</h1>
           <p className="text-xl md:text-2xl text-[var(--color-text-muted)] leading-relaxed">
             Selected engagements where organizational architecture drove measurable change.
           </p>
@@ -101,8 +101,8 @@ export default function ImpactPage() {
       {/* CTA */}
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl mb-4">Every Organization Has a Structure Problem.</h2>
-          <p className="text-[var(--color-text-muted)] text-lg mb-8">Tell us yours. We'll tell you what's possible, and what isn't.</p>
+          <h2 className="font-serif text-3xl md:text-4xl mb-4">Recognize any of these?</h2>
+          <p className="text-[var(--color-text-muted)] text-lg mb-8">If your company is hitting the same walls, we should talk.</p>
           <Link
             to="/#contact"
             className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent-light)] transition-colors"

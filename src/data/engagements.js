@@ -6,8 +6,8 @@ const engagements = [
     orgType: "Lead-driven buyer–seller matching",
     scale: "Founder-led, growth-phase, Bengaluru",
     engagementFocus: "Organizational Architecture & Governance Installation",
-    impactStatement: "Transitioned a founder-led real estate intermediary from personality-driven execution to documented operating structure.",
-    triggerMoment: "The organization was operating on a founder-built foundation with increasing lead volume, team expansion, and rising coordination complexity.",
+    impactStatement: "A real estate company where everything ran through the founder. We built the system so it didn't have to.",
+    triggerMoment: "Leads were growing, the team was growing, and the founder was still the only person who knew how everything worked. Coordination was held together by memory, not systems.",
     structuralFrictions: [
       "Role ambiguity across BD, Sales, Analytics, and HR",
       "Founder dependency for performance oversight",
@@ -43,14 +43,14 @@ const engagements = [
     ],
     interventionFootnote: "Execution was phased through a structured 30-60-90 day plan.",
     whatChanged: [
-      "Clearly defined functional ownership across departments",
-      "Structured performance review cadence",
-      "Quantified workflow visibility from lead capture to closure",
-      "Reduced founder dependency in day-to-day oversight",
-      "Formalized engagement and retention systems",
-      "Governance documentation enabling continuity during role transitions"
+      "Every department knows exactly who owns what",
+      "Monthly and quarterly reviews actually happen, with real metrics",
+      "Leadership can see every lead from first contact to close",
+      "The founder stopped being the bottleneck for daily decisions",
+      "Employee pulse surveys and career paths exist where they didn't before",
+      "When someone leaves or moves roles, the system keeps running"
     ],
-    whatChangedSummary: "The company transitioned from personality-driven execution to documented operating structure.",
+    whatChangedSummary: "The company went from running on the founder's memory to running on systems anyone can operate.",
     relatedCapabilities: ["clarify", "execute", "align"]
   },
   {
@@ -60,8 +60,8 @@ const engagements = [
     orgType: "Growth-stage operating company",
     scale: "",
     engagementFocus: "Commercial Enablement & Operational Performance Architecture",
-    impactStatement: "Combined structural alignment with embedded execution support to move a growth-stage company from coordination-dependent execution to structured performance alignment.",
-    triggerMoment: "OfficeSmart.in was expanding its commercial activity while simultaneously refining internal execution, product experience, and team capability. Growth was visible, but structural consistency across sales, marketing, product, and delivery needed strengthening.",
+    impactStatement: "A growing B2B company where teams were busy but misaligned. We installed the operating rhythm that connected effort to results.",
+    triggerMoment: "The company was expanding fast — more clients, more products, more people — but the teams were operating in parallel instead of together. Sales didn't connect to marketing, product feedback was informal, and nobody had a shared view of what 'good' looked like.",
     triggerMomentExtra: "The engagement extended beyond advisory into embedded commercial and operational contribution.",
     structuralFrictions: [
       "Inconsistent performance visibility across teams",
@@ -72,7 +72,7 @@ const engagements = [
       "Operational coordination relied on informal alignment",
       "Internship and new talent onboarding lacked structured integration"
     ],
-    structuralFrictionSummary: "Execution was active. Alignment and discipline required reinforcement.",
+    structuralFrictionSummary: "Everyone was busy. Nobody was synchronized.",
     interventionPreamble: "The engagement combined structural alignment with hands-on execution support.",
     interventionArchitecture: [
       {
@@ -98,14 +98,14 @@ const engagements = [
     ],
     interventionFootnote: "The engagement emphasized systemization, not surface-level process edits.",
     whatChanged: [
-      "Clearer commercial flow across B2B sales stages",
-      "Improved marketing-to-sales alignment",
-      "Structured performance visibility for leadership",
-      "Defined ownership in decision and execution stages",
-      "Formalized internship and capability integration",
-      "Strengthened coordination across commercial and operational teams"
+      "Sales stages are defined and tracked — leads don't fall through the cracks",
+      "Marketing and sales now operate off the same playbook",
+      "Leadership has a single dashboard for performance across all teams",
+      "Every function has clear ownership over its decisions and deliverables",
+      "New hires and interns get structured onboarding instead of figuring it out",
+      "Cross-functional handoffs happen through process, not hallway conversations"
     ],
-    whatChangedSummary: "The organization moved from coordination-dependent execution to structured performance alignment.",
+    whatChangedSummary: "The organization went from busy-but-disconnected to aligned and measurable.",
     relatedCapabilities: ["execute", "align", "clarify"]
   },
   {
@@ -115,8 +115,8 @@ const engagements = [
     orgType: "Mid-to-large institutional enterprise",
     scale: "Multi-department leadership structure",
     engagementFocus: "Organizational Architecture & Governance Alignment",
-    impactStatement: "Strengthened structural coherence across leadership, performance review, and accountability mechanisms without disrupting operational momentum.",
-    triggerMoment: "The organization was operating at scale with defined verticals, but structural alignment across leadership, performance review, and accountability mechanisms required consolidation.",
+    impactStatement: "A large developer where leadership roles had blurred and reviews had no teeth. We rebuilt accountability without slowing the business down.",
+    triggerMoment: "The company had grown into a multi-department operation, but the structure hadn't kept up. Leadership roles overlapped, performance reviews were inconsistent, and nobody could point to a single source of truth for who owned what outcome.",
     triggerMomentExtra: "Growth and complexity had introduced uneven clarity in role expectations and review discipline.",
     structuralFrictions: [
       "Variability in role clarity across functions",
@@ -125,7 +125,7 @@ const engagements = [
       "KPI/KRA definitions not uniformly tied to business outcomes",
       "Governance cadence lacking formal documentation"
     ],
-    structuralFrictionSummary: "Execution was present. Alignment and measurement required strengthening.",
+    structuralFrictionSummary: "The company was executing. But nobody could say whether the right things were getting done.",
     interventionPreamble: "The engagement focused on structural alignment at leadership and performance levels.",
     interventionArchitecture: [
       {
@@ -143,13 +143,13 @@ const engagements = [
     ],
     interventionFootnote: "The work emphasized institutional discipline and metric coherence.",
     whatChanged: [
-      "Clearer leadership accountability across departments",
-      "Formalized performance review architecture",
-      "Defined KPI/KRA alignment with business objectives",
-      "Improved governance consistency",
-      "Reduced ambiguity in objective ownership"
+      "Every leadership role has a clear mandate and defined accountability",
+      "Performance reviews follow a consistent structure with real metrics behind them",
+      "KPIs are tied to business outcomes, not activity counts",
+      "Governance cadence is documented and enforced",
+      "Leaders know what they own — and what they don't"
     ],
-    whatChangedSummary: "The organization strengthened structural coherence without disrupting operational momentum.",
+    whatChangedSummary: "The organization tightened its structure without losing its momentum.",
     relatedCapabilities: ["clarify", "align", "execute"]
   }
 ];

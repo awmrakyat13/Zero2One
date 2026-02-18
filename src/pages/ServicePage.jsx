@@ -60,7 +60,7 @@ export default function ServicePage() {
       {/* Offerings */}
       <section className="py-16 md:py-24 bg-[var(--color-bg-alt)]">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl mb-10">What This Includes</h2>
+          <h2 className="font-serif text-3xl md:text-4xl mb-10">What You Get</h2>
           <div className="space-y-0">
             {service.offerings.map((item, i) => (
               <div key={i} className="py-5 border-b border-[var(--color-border)]">
@@ -74,7 +74,7 @@ export default function ServicePage() {
       {/* CTA */}
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl mb-4">Interested in {service.title}?</h2>
+          <h2 className="font-serif text-3xl md:text-4xl mb-4">{service.ctaLine || `Interested in ${service.title}?`}</h2>
           <p className="text-[var(--color-text-muted)] text-lg mb-8">Tell us what you're working on. We'll tell you what's possible, and what isn't.</p>
           <Link
             to="/#contact"

@@ -8,13 +8,14 @@ import ImpactPage from './pages/ImpactPage';
 import CaseStudyPage from './pages/CaseStudyPage';
 import publications from './data/publications';
 import ResearchPage from './pages/ResearchPage';
+import impactMetrics from './data/impactMetrics';
 
 const team = [
   {
     name: "Lt Col L Shri Harsha (retd)",
     credentials: "BE, MBA, MBL, PMP, PgMP, DASSM",
     role: "Partner, Strategy & Leadership",
-    bio: "Decorated military leader turned strategy consultant. Brings disciplined execution frameworks and leadership under pressure to complex organizational challenges.",
+    bio: "20+ years commanding complex operations in the Indian Army, then applied the same discipline to corporate strategy and governance. Published at PMI Global, Institute of Directors, and Indian Building Congress. Runs engagements the way he ran operations — with clarity, accountability, and zero tolerance for ambiguity.",
     initials: "LSH",
     linkedin: "https://www.linkedin.com/in/ltcol-l-shriharsha-retd/",
     previously: ["Indian Army", "PMI", "AECOM", "Jacobs CES"]
@@ -23,7 +24,7 @@ const team = [
     name: "Dr. Hema Harsha",
     credentials: "BE, MLM, MBL, MBA, PhD",
     role: "Partner, Training & Academic Excellence",
-    bio: "Academician and corporate trainer with deep expertise in leadership development, organizational behavior, and institutional capacity building.",
+    bio: "Built leadership development programs across corporate and academic institutions for 15+ years. Published researcher on competency frameworks and leadership dynamics. Brings the rigor of academic methodology to the practical problem of making leaders actually lead better.",
     initials: "HH",
     linkedin: "https://www.linkedin.com/in/dr-hema-harsha/",
     previously: ["LCC Infotech", "MP Birla Institute of Management"]
@@ -32,7 +33,7 @@ const team = [
     name: "Shrigauri Naidu",
     credentials: "BBA, MBA, PMP",
     role: "Partner, Training & Development",
-    bio: "Specialist in designing training architectures that connect individual capability to organizational performance. Focused on measurable development outcomes.",
+    bio: "Former Amazon and Toast — built and scaled training programs inside high-velocity organizations. Knows the difference between training that checks a box and training that changes how people work. Designs capability systems tied to business metrics, not HR compliance.",
     initials: "SN",
     linkedin: "https://www.linkedin.com/in/shrigaurinaidu/",
     previously: ["Amazon", "Toast"]
@@ -41,7 +42,7 @@ const team = [
     name: "Uttam Shri Harsha",
     credentials: "BE, MS, MBA, PMP",
     role: "Founder & Principal",
-    bio: "Builder of operating systems for growing organizations. Specializes in translating founder vision into scalable structure, process, and governance.",
+    bio: "Former Amazon, Newell Brands, and Toast. Has spent his career inside companies that were scaling fast and breaking things along the way. Founded Zero2One to help growing companies install the operating architecture that makes growth sustainable instead of chaotic.",
     initials: "UH",
     linkedin: "https://www.linkedin.com/in/uttam-s/",
     previously: ["Amazon", "Newell Brands", "Toast"]
@@ -71,13 +72,13 @@ function Navigation() {
             Zero2One
           </Link>
           <div className="hidden md:flex gap-10 items-center text-sm">
-            <button onClick={() => scrollToSection('offerings')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Work</button>
-            <Link to="/impact" className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Record</Link>
-            <Link to="/research" className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Thought</Link>
-            <button onClick={() => scrollToSection('approach')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Method</button>
+            <button onClick={() => scrollToSection('offerings')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Services</button>
+            <Link to="/impact" className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Case Studies</Link>
+            <Link to="/research" className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Research</Link>
+            <button onClick={() => scrollToSection('approach')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Our Process</button>
             <button onClick={() => scrollToSection('collective')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Team</button>
             <button onClick={() => scrollToSection('contact')} className="px-5 py-2 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm hover:bg-[var(--color-accent-light)] transition-colors">
-              Contact Us
+              Talk to Us
             </button>
           </div>
           <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
@@ -86,12 +87,12 @@ function Navigation() {
         </div>
         {mobileMenuOpen && (
           <div className="md:hidden mt-6 pb-4 space-y-4 text-sm fade-in">
-            <button onClick={() => scrollToSection('offerings')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Work</button>
-            <Link to="/impact" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Record</Link>
-            <Link to="/research" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Thought</Link>
-            <button onClick={() => scrollToSection('approach')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Method</button>
+            <button onClick={() => scrollToSection('offerings')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Services</button>
+            <Link to="/impact" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Case Studies</Link>
+            <Link to="/research" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Research</Link>
+            <button onClick={() => scrollToSection('approach')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Our Process</button>
             <button onClick={() => scrollToSection('collective')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Team</button>
-            <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Contact</button>
+            <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Talk to Us</button>
           </div>
         )}
       </div>
@@ -137,6 +138,13 @@ function HomePage() {
     }
   };
 
+  const methodologySteps = [
+    { title: "Diagnostic", description: "We map your current structure, decision flows, and pain points against what you're actually trying to achieve. You get a clear, written picture of the gap — not a 90-slide deck." },
+    { title: "Alignment", description: "We work with your leadership team to agree on what the organization needs to look like, who owns what, and what 'good' means. No alignment, no point building anything." },
+    { title: "Implementation", description: "We build the systems, processes, and governance architecture alongside your team — not in a vacuum. Frameworks get tested in real operating conditions before we call them done." },
+    { title: "Transfer of Ownership", description: "We hand it over. Documentation, training, operating playbooks — everything your team needs to run what we built without calling us." }
+  ];
+
   return (
     <>
 
@@ -145,37 +153,34 @@ function HomePage() {
         <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
           <div className="max-w-4xl">
             <h1 className="font-serif text-5xl md:text-7xl leading-[1.1] mb-8 opacity-0 fade-in">
-              Where Strategy Meets Structure.
+              Your company outgrew its structure. We fix that.
             </h1>
-            <div className="flex flex-wrap items-center gap-y-2 text-sm md:text-base text-[var(--color-text-muted)] mb-12 opacity-0 fade-in delay-100 tracking-wide">
-              <span>Strategic Advisory</span>
-              <span className="mx-3 w-px h-4 bg-[var(--color-accent)] opacity-30 inline-block" />
-              <span>Organisational Design</span>
-              <span className="mx-3 w-px h-4 bg-[var(--color-accent)] opacity-30 inline-block" />
-              <span>Operational Consulting</span>
-              <span className="mx-3 w-px h-4 bg-[var(--color-accent)] opacity-30 inline-block" />
-              <span>Training Consulting</span>
-              <span className="mx-3 w-px h-4 bg-[var(--color-accent)] opacity-30 inline-block" />
-              <span>Leadership &amp; Capability Development</span>
-            </div>
+            <p className="text-lg md:text-xl text-[var(--color-text-muted)] mb-12 opacity-0 fade-in delay-100 leading-relaxed max-w-3xl">
+              We install the operating architecture that lets growing companies scale without breaking.
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 opacity-0 fade-in delay-200">
               <Link to="/impact" className="group px-8 py-4 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent-light)] transition-colors inline-flex items-center gap-3">
-                Explore Our Work <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
+                See What Changes <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
               </Link>
               <button onClick={() => scrollToSection('contact')} className="px-8 py-4 border border-[var(--color-border)] text-sm tracking-wide hover:border-[var(--color-text)] transition-colors">
-                Speak With Us
+                Talk to Us
               </button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What We Do */}
+      {/* Qualifier Line */}
+      <p className="text-center text-sm tracking-[0.15em] uppercase text-[var(--color-text-muted)] py-8 px-6">
+        For founders, CXOs, and leadership teams building companies that have outgrown how they operate.
+      </p>
+
+      {/* What We Install */}
       <section id="offerings" className="py-24 md:py-32 bg-[var(--color-bg-alt)]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
             <h2 className="font-serif text-4xl md:text-5xl mb-4">What We Install</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Operating architecture for companies that have outgrown their structure.</p>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Operating architecture for companies that have outgrown how they run.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {services.map((item, index) => (
@@ -267,6 +272,13 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Social Proof Strip */}
+      <div className="py-10 text-center">
+        <p className="text-lg md:text-xl text-[var(--color-accent)] tracking-wide">
+          {impactMetrics[0].value} engagements across {impactMetrics[1].value} industries. {impactMetrics[2].value} professionals impacted.
+        </p>
+      </div>
+
       {/* How We Work */}
       <section id="approach" className="py-24 md:py-32">
         <div className="max-w-6xl mx-auto px-6">
@@ -275,10 +287,11 @@ function HomePage() {
             <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">A process built to transfer ownership, not create dependency.</p>
           </div>
           <div className="grid md:grid-cols-4 gap-8 mb-16">
-            {["Diagnostic", "Alignment", "Implementation", "Transfer of Ownership"].map((step, i) => (
+            {methodologySteps.map((step, i) => (
               <div key={i} className="relative">
                 <div className="text-xs text-[var(--color-warm)] mb-3 tracking-widest uppercase">{String(i + 1).padStart(2, '0')}</div>
-                <h3 className="font-serif text-xl mb-2">{step}</h3>
+                <h3 className="font-serif text-xl mb-2">{step.title}</h3>
+                <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">{step.description}</p>
                 {i < 3 && <div className="hidden md:block absolute top-8 right-0 w-8 border-t border-[var(--color-border)]" />}
               </div>
             ))}
@@ -286,9 +299,9 @@ function HomePage() {
           <div className="border-t border-[var(--color-border)] pt-12">
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { title: "One-time Engagements", desc: "Focused interventions for specific organizational challenges." },
-                { title: "Ongoing Advisory Retainers", desc: "Continuous strategic counsel for evolving needs." },
-                { title: "Embedded Execution", desc: "On-ground implementation with your teams." }
+                { title: "One-time Engagements", desc: "A defined scope, a fixed timeline, a clear deliverable. For companies that know what's broken." },
+                { title: "Ongoing Advisory Retainers", desc: "Monthly strategic counsel for leadership teams navigating growth, transitions, or complexity they haven't seen before." },
+                { title: "Embedded Execution", desc: "We put someone in the room — working alongside your team, building systems in real time. For when the problem is too deep for advice alone." }
               ].map((model, i) => (
                 <div key={i}>
                   <h3 className="font-medium mb-2">{model.title}</h3>
@@ -305,7 +318,7 @@ function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
             <h2 className="font-serif text-4xl md:text-5xl mb-4">Who's in the Room</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Industry practitioners with institutional depth and published research.</p>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Not career consultants. Operators who've built inside companies like Amazon, the Indian Army, and high-growth startups — and now build for yours.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {team.map((member, index) => (
@@ -339,8 +352,8 @@ function HomePage() {
           <div className="mt-16 border-t border-[var(--color-border)] pt-16">
             <div className="flex justify-between items-end mb-10">
               <div>
-                <h3 className="font-serif text-3xl md:text-4xl mb-2">What We Think About</h3>
-                <p className="text-[var(--color-text-muted)]">Published positions on leadership, governance, and organizational design.</p>
+                <h3 className="font-serif text-3xl md:text-4xl mb-2">What We've Published</h3>
+                <p className="text-[var(--color-text-muted)]">Our practice is informed by published research — not recycled frameworks. Here's what we've put our names on.</p>
               </div>
               <Link to="/research" className="hidden md:inline-flex items-center gap-2 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
                 View Full List <ArrowRight size={14} />
@@ -351,6 +364,9 @@ function HomePage() {
                 <div key={i} className="py-5 border-b border-[var(--color-border)]">
                   <h4 className="font-serif text-lg mb-1">{pub.title}</h4>
                   <span className="text-sm text-[var(--color-text-muted)]">{pub.authors}</span>
+                  {pub.reference && (
+                    <p className="text-sm text-[var(--color-text-muted)] mt-2 leading-relaxed opacity-80">{pub.reference}</p>
+                  )}
                 </div>
               ))}
             </div>
@@ -367,7 +383,7 @@ function HomePage() {
           <div className="grid md:grid-cols-2 gap-16">
             <div>
               <h2 className="font-serif text-4xl md:text-5xl mb-6">Clarity Begins With a Conversation.</h2>
-              <p className="text-[var(--color-text-muted)] text-lg mb-8">Tell us what you are building, fixing, or rethinking. We'll tell you what's possible, and what isn't.</p>
+              <p className="text-[var(--color-text-muted)] text-lg mb-8">Tell us what's not working — the structure, the team, the pace. We'll tell you what we can fix and what we can't.</p>
               <div className="space-y-4 text-sm text-[var(--color-text-muted)]">
                 <p>info@zero2one.in</p>
                 <p>+91 8310777767</p>
@@ -397,7 +413,7 @@ function HomePage() {
                     <input id="company" type="text" value={formData.company} onChange={(e) => setFormData({...formData, company: e.target.value})} className="w-full px-0 py-3 bg-transparent border-0 border-b border-[var(--color-border)] text-sm focus:outline-none focus:border-[var(--color-text)] transition-colors" />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-2">How can we help? *</label>
+                    <label htmlFor="message" className="block text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-2">What are you dealing with? *</label>
                     <textarea id="message" rows={4} value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full px-0 py-3 bg-transparent border-0 border-b border-[var(--color-border)] text-sm focus:outline-none focus:border-[var(--color-text)] transition-colors resize-none" />
                   </div>
                   <button onClick={handleSubmit} className="px-8 py-4 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent-light)] transition-colors">
@@ -427,8 +443,13 @@ export default function App() {
       </Routes>
       <footer className="border-t-2 border-t-[var(--color-accent)] py-10 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[var(--color-text-muted)]">
-          <p>&copy; 2025 Zero2One Consulting. All rights reserved.</p>
-          <p>Bengaluru, India</p>
+          <p>&copy; {new Date().getFullYear()} Zero2One Consulting. All rights reserved.</p>
+          <div className="flex gap-6">
+            <Link to="/#offerings" className="hover:text-[var(--color-text)] transition-colors">Services</Link>
+            <Link to="/impact" className="hover:text-[var(--color-text)] transition-colors">Case Studies</Link>
+            <Link to="/research" className="hover:text-[var(--color-text)] transition-colors">Research</Link>
+          </div>
+          <p>info@zero2one.in</p>
         </div>
       </footer>
     </div>

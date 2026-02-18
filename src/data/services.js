@@ -2,8 +2,9 @@ const services = [
   {
     title: "Clarify",
     slug: "clarify",
-    summary: "Organizational design, role clarity, strategy-to-execution alignment.",
+    summary: "Nobody knows who owns what, and your strategy isn't reaching the people executing it. We fix the wiring.",
     tagline: "Before you can build, you need to see clearly.",
+    ctaLine: "Not sure what's broken? That's exactly where Clarify starts.",
     description: [
       "Most organizations don't fail because of bad strategy, they fail because the strategy never reaches the people who have to execute it. Roles are ambiguous, decision rights are unclear, and the distance between intent and action grows with every layer of hierarchy.",
       "Zero2One's Clarify practice helps leadership teams cut through organizational fog. We work with founders, CXOs, and boards to redesign structures that actually reflect how value is created, not how the org chart was inherited.",
@@ -21,8 +22,9 @@ const services = [
   {
     title: "Align",
     slug: "align",
-    summary: "Leadership capability, performance systems, operating rhythm.",
+    summary: "Your leaders aren't rowing in the same direction and there's no system to tell. We build the connective tissue.",
     tagline: "Structure without alignment is just a prettier version of chaos.",
+    ctaLine: "Leaders misaligned? Let's fix that before it costs you another quarter.",
     description: [
       "Even well-designed organizations break down when leaders aren't aligned on priorities, performance isn't measured consistently, and the operating rhythm doesn't match the pace of the business.",
       "Zero2One's Align practice builds the connective tissue between strategy and execution. We design leadership development programs, performance management architectures, and operating cadences that keep organizations synchronized, quarter after quarter.",
@@ -40,8 +42,9 @@ const services = [
   {
     title: "Execute",
     slug: "execute",
-    summary: "Operations architecture, workflow optimization, governance design.",
+    summary: "You have more plans than you can ship. We build the machinery that turns decisions into outcomes.",
     tagline: "Plans are worthless without the machinery to deliver them.",
+    ctaLine: "Plans collecting dust? We can help build the machinery to ship them.",
     description: [
       "Strategy decks don't build companies, operating systems do. Most organizations have more plans than they can execute, and the gap between what's decided in the boardroom and what happens on the ground keeps widening.",
       "Zero2One's Execute practice designs the operational backbone that turns strategic intent into consistent, measurable output. We build governance frameworks, workflow architectures, and reporting systems that make execution predictable rather than heroic.",
@@ -59,8 +62,9 @@ const services = [
   {
     title: "Articulate",
     slug: "articulate",
-    summary: "Strategic writing, executive communication, institutional narrative.",
+    summary: "Your thinking is better than your documents. We write what matters — board decks, policy, positioning.",
     tagline: "If you can't articulate it, you can't scale it.",
+    ctaLine: "Need your thinking to land? Let's talk about what you need written.",
     description: [
       "The difference between an organization that scales and one that stalls is often the quality of its written thinking. Strategy documents that lack precision, board presentations that bury the insight, SOPs that no one reads, these aren't cosmetic problems. They're structural ones.",
       "Zero2One's Articulate practice provides executive-grade writing and strategic communication for leaders who need their thinking to land with authority. From board decks to policy documents, from thought leadership to institutional reports, we write what matters.",
