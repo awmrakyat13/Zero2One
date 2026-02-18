@@ -6,7 +6,7 @@ import publications from '../data/publications';
 export default function ResearchPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Research & Contributions - Zero2One Consulting';
+    document.title = 'Research - Zero2One Consulting';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     const originalDescription = metaDescription?.getAttribute('content');
@@ -35,7 +35,7 @@ export default function ResearchPage() {
       {/* Hero */}
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <h1 className="font-serif text-5xl md:text-6xl mb-4">Research & Contributions</h1>
+          <h1 className="font-serif text-5xl md:text-6xl mb-4">Research That Informs Our Practice</h1>
           <p className="text-xl md:text-2xl text-[var(--color-text-muted)] leading-relaxed">
             Theory that informs practice. Published work by the Zero2One team.
           </p>
