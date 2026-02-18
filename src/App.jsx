@@ -302,7 +302,7 @@ function HomePage() {
                   <p className="text-xs text-[var(--color-text-muted)] mb-1">{member.credentials}</p>
                   <p className="text-sm text-[var(--color-accent)] mb-3">
                     {member.role}
-                    {member.domain && <><span className="mx-2 text-[var(--color-border)]">|</span>{member.domain}</>}
+                    {member.domain && <><span className="text-[var(--color-border)]">|</span>{member.domain}</>}
                   </p>
                   <Link
                     to={`/team/${member.slug}`}
