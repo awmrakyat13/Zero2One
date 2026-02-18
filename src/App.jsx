@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Menu, X, Linkedin, ArrowRight, ChevronDown } from 'lucide-react';
+import { Menu, X, ArrowRight, ChevronDown } from 'lucide-react';
 import services from './data/services';
 import ServicePage from './pages/ServicePage';
 import engagements from './data/engagements';
@@ -9,45 +9,8 @@ import CaseStudyPage from './pages/CaseStudyPage';
 import publications from './data/publications';
 import ResearchPage from './pages/ResearchPage';
 import impactMetrics from './data/impactMetrics';
-
-const team = [
-  {
-    name: "Lt Col L Shri Harsha (retd)",
-    credentials: "BE, MBA, MBL, PMP, PgMP, DASSM",
-    role: "Partner, Strategy & Leadership",
-    bio: "20+ years commanding complex operations in the Indian Army, then applied the same discipline to corporate strategy and governance. Published at PMI Global, Institute of Directors, and Indian Building Congress. Runs engagements the way he ran operations: with clarity, accountability, and zero tolerance for ambiguity.",
-    initials: "LSH",
-    linkedin: "https://www.linkedin.com/in/ltcol-l-shriharsha-retd/",
-    previously: ["Indian Army", "PMI", "AECOM", "Jacobs CES"]
-  },
-  {
-    name: "Dr. Hema Harsha",
-    credentials: "BE, MLM, MBL, MBA, PhD",
-    role: "Partner, Training & Academic Excellence",
-    bio: "Built leadership development programs across corporate and academic institutions for 15+ years. Published researcher on competency frameworks and leadership dynamics. Brings the rigor of academic methodology to the practical problem of making leaders actually lead better.",
-    initials: "HH",
-    linkedin: "https://www.linkedin.com/in/dr-hema-harsha/",
-    previously: ["LCC Infotech", "MP Birla Institute of Management"]
-  },
-  {
-    name: "Shrigauri Naidu",
-    credentials: "BBA, MBA, PMP",
-    role: "Partner, Training & Development",
-    bio: "Former Amazon and Toast, built and scaled training programs inside high-velocity organizations. Knows the difference between training that checks a box and training that changes how people work. Designs capability systems tied to business metrics, not HR compliance.",
-    initials: "SN",
-    linkedin: "https://www.linkedin.com/in/shrigaurinaidu/",
-    previously: ["Amazon", "Toast"]
-  },
-  {
-    name: "Uttam Shri Harsha",
-    credentials: "BE, MS, MBA, PMP",
-    role: "Founder & Principal",
-    bio: "Former Amazon, Newell Brands, and Toast. Has spent his career inside companies that were scaling fast and breaking things along the way. Founded Zero2One to help growing companies install the operating architecture that makes growth sustainable instead of chaotic.",
-    initials: "UH",
-    linkedin: "https://www.linkedin.com/in/uttam-s/",
-    previously: ["Amazon", "Newell Brands", "Toast"]
-  }
-];
+import team from './data/team';
+import TeamMemberPage from './pages/TeamMemberPage';
 
 
 function Navigation() {
@@ -328,29 +291,22 @@ function HomePage() {
             <h2 className="font-serif text-4xl md:text-5xl mb-2">Who's in the Room</h2>
             <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Industry practitioners with institutional depth, from Amazon and high-growth startups to military operations and published research.</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
             {team.map((member, index) => (
-              <div key={index} className="bg-[var(--color-bg)] border border-[var(--color-border)] p-8 flex gap-6">
+              <div key={index} className="bg-[var(--color-bg)] border border-[var(--color-border)] p-6 flex gap-5">
                 <div className="shrink-0 w-16 h-16 bg-[var(--color-accent)] text-[var(--color-bg)] flex items-center justify-center text-sm font-medium tracking-wide">
                   {member.initials}
                 </div>
                 <div className="min-w-0">
-                  <div className="flex items-center gap-3 mb-1">
-                    <h3 className="font-medium">{member.name}</h3>
-                    {member.linkedin && (
-                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${member.name} on LinkedIn`} className="text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">
-                        <Linkedin size={16} />
-                      </a>
-                    )}
-                  </div>
+                  <h3 className="font-medium mb-1">{member.name}</h3>
                   <p className="text-xs text-[var(--color-text-muted)] mb-1">{member.credentials}</p>
                   <p className="text-sm text-[var(--color-accent)] mb-3">{member.role}</p>
-                  <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">{member.bio}</p>
-                  {member.previously && (
-                    <p className="text-xs text-[var(--color-text-muted)] mt-3 pt-3 border-t border-[var(--color-border)]">
-                      <span className="tracking-widest uppercase">Previously:</span> {member.previously.join(' · ')}
-                    </p>
-                  )}
+                  <Link
+                    to={`/team/${member.slug}`}
+                    className="inline-flex items-center gap-2 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors"
+                  >
+                    View Profile <ArrowRight size={14} />
+                  </Link>
                 </div>
               </div>
             ))}
@@ -448,6 +404,7 @@ export default function App() {
         <Route path="/impact" element={<ImpactPage />} />
         <Route path="/impact/:slug" element={<CaseStudyPage />} />
         <Route path="/research" element={<ResearchPage />} />
+        <Route path="/team/:slug" element={<TeamMemberPage />} />
       </Routes>
       <footer className="border-t-2 border-t-[var(--color-accent)] py-8 px-6">
         <div className="max-w-6xl mx-auto text-center text-xs text-[var(--color-text-muted)] space-y-3">
