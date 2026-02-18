@@ -6,7 +6,7 @@ import engagements from '../data/engagements';
 export default function ImpactPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'Impact — Zero2One Consulting';
+    document.title = 'Impact,Zero2One Consulting';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     const originalDescription = metaDescription?.getAttribute('content');
@@ -19,12 +19,12 @@ export default function ImpactPage() {
     script.textContent = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
-      name: 'Impact — Zero2One Consulting',
+      name: 'Impact,Zero2One Consulting',
       description: 'Featured client engagements demonstrating structural transformation outcomes.',
       url: 'https://zero2one.in/impact',
       mainEntity: engagements.map(e => ({
         '@type': 'CreativeWork',
-        name: `${e.company} — ${e.engagementFocus}`,
+        name: `${e.company},${e.engagementFocus}`,
         url: `https://zero2one.in/impact/${e.slug}`
       }))
     });

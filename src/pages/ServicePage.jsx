@@ -10,7 +10,7 @@ export default function ServicePage() {
   useEffect(() => {
     window.scrollTo(0, 0);
     if (service) {
-      document.title = `${service.title} — Zero2One Consulting`;
+      document.title = `${service.title},Zero2One Consulting`;
     }
     return () => { document.title = 'Zero2One Consulting'; };
   }, [service]);

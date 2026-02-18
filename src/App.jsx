@@ -18,7 +18,7 @@ const team = [
   },
   {
     name: "Dr. Hema Harsha, BE, MLM, MBL, MBA, PhD",
-    role: "Partner — Training & Academic Excellence",
+    role: "Partner,Training & Academic Excellence",
     domain: "Leadership Development & Corporate Training",
     bio: "Academician and corporate trainer with deep expertise in leadership development, organizational behavior, and institutional capacity building.",
     initials: "HH",
@@ -26,7 +26,7 @@ const team = [
   },
   {
     name: "Lt Col L Shri Harsha (Retd.), BE, MBA, MBL, PMP, PgMP, DASSM",
-    role: "Partner — Strategy & Leadership",
+    role: "Partner,Strategy & Leadership",
     domain: "Strategic Planning & Leadership Under Pressure",
     bio: "Decorated military leader turned strategy consultant. Brings disciplined execution frameworks and leadership under pressure to complex organizational challenges.",
     initials: "LSH",
@@ -34,7 +34,7 @@ const team = [
   },
   {
     name: "Shrigauri Naidu, BBA, MBA, PMP",
-    role: "Partner — Training & Development",
+    role: "Partner,Training & Development",
     domain: "Capability Building & Performance Systems",
     bio: "Specialist in designing training architectures that connect individual capability to organizational performance. Focused on measurable development outcomes.",
     initials: "SN",
@@ -182,7 +182,7 @@ function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
             <h2 className="font-serif text-4xl md:text-5xl mb-4">What We Do</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Four pillars of organizational excellence — each designed to compound on the others.</p>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Four pillars of organizational excellence,each designed to compound on the others.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {services.map((item, index) => (
@@ -279,7 +279,7 @@ function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
             <h2 className="font-serif text-4xl md:text-5xl mb-4">How We Work</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">A structured methodology that builds internal capability — not dependency.</p>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">A structured methodology that builds internal capability,not dependency.</p>
           </div>
           <div className="grid md:grid-cols-4 gap-8 mb-16">
             {["Diagnostic", "Alignment", "Implementation", "Transfer of Ownership"].map((step, i) => (
@@ -312,7 +312,7 @@ function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
             <h2 className="font-serif text-4xl md:text-5xl mb-4">The Zero2One Collective</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Practitioners with institutional experience — not theorists with frameworks.</p>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Practitioners with institutional experience,not theorists with frameworks.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {team.map((member, index) => (
@@ -344,7 +344,7 @@ function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
             <h2 className="font-serif text-4xl md:text-5xl mb-4">Built for Scale. Designed for Reality.</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Depth that shows in the work — not in the pitch.</p>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Depth that shows in the work,not in the pitch.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-6">
             {capabilities.map((cap, i) => (
