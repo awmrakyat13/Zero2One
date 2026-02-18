@@ -152,10 +152,10 @@ function HomePage() {
       <section className="min-h-[85vh] flex items-center pt-20">
         <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
           <div className="max-w-4xl">
-            <h1 className="font-serif text-5xl md:text-7xl leading-[1.1] mb-8 opacity-0 fade-in">
+            <h1 className="font-serif text-5xl md:text-7xl leading-[1.1] mb-5 opacity-0 fade-in">
               Where Strategy Meets Structure.
             </h1>
-            <div className="flex flex-wrap items-center gap-y-2 text-sm md:text-base text-[var(--color-text-muted)] mb-12 opacity-0 fade-in delay-100 tracking-wide">
+            <div className="flex flex-wrap items-center gap-y-2 text-sm md:text-base text-[var(--color-text-muted)] mb-8 opacity-0 fade-in delay-100 tracking-wide">
               <span>Strategic Advisory</span>
               <span className="mx-3 w-px h-4 bg-[var(--color-accent)] opacity-30 inline-block" />
               <span>Organisational Design</span>
@@ -186,8 +186,8 @@ function HomePage() {
       {/* What We Install */}
       <section id="offerings" className="py-16 md:py-24 bg-[var(--color-bg-alt)]">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-10">
-            <h2 className="font-serif text-4xl md:text-5xl mb-4">What We Install</h2>
+          <div className="mb-8">
+            <h2 className="font-serif text-4xl md:text-5xl mb-2">What We Install</h2>
             <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Four pillars of organizational excellence, each designed to compound on the others.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -233,9 +233,9 @@ function HomePage() {
 
           {/* Case Studies */}
           <div className="mt-12 border-t border-[var(--color-border)] pt-12">
-            <div className="flex justify-between items-end mb-10">
+            <div className="flex justify-between items-end mb-8">
               <div>
-                <h3 className="font-serif text-3xl md:text-4xl mb-2">Where We've Done It</h3>
+                <h3 className="font-serif text-3xl md:text-4xl mb-1">Where We've Done It</h3>
                 <p className="text-[var(--color-text-muted)]">Engagements with outcomes you can trace.</p>
               </div>
               <Link to="/impact" className="hidden md:inline-flex items-center gap-2 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
@@ -290,11 +290,11 @@ function HomePage() {
       {/* How We Work */}
       <section id="approach" className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-10">
-            <h2 className="font-serif text-4xl md:text-5xl mb-4">How We Work</h2>
+          <div className="mb-8">
+            <h2 className="font-serif text-4xl md:text-5xl mb-2">How We Work</h2>
             <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">A process built to transfer ownership, not create dependency.</p>
           </div>
-          <div className="grid md:grid-cols-4 gap-8 mb-16">
+          <div className="grid md:grid-cols-4 gap-8 mb-10">
             {methodologySteps.map((step, i) => (
               <div key={i} className="relative">
                 <div className="text-xs text-[var(--color-warm)] mb-3 tracking-widest uppercase">{String(i + 1).padStart(2, '0')}</div>
@@ -304,7 +304,7 @@ function HomePage() {
               </div>
             ))}
           </div>
-          <div className="border-t border-[var(--color-border)] pt-12">
+          <div className="border-t border-[var(--color-border)] pt-8">
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 { title: "One-time Engagements", desc: "A defined scope, a fixed timeline, a clear deliverable. For companies that know what's broken." },
@@ -324,8 +324,8 @@ function HomePage() {
       {/* The Collective */}
       <section id="collective" className="py-16 md:py-24 bg-[var(--color-bg-alt)]">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-10">
-            <h2 className="font-serif text-4xl md:text-5xl mb-4">Who's in the Room</h2>
+          <div className="mb-8">
+            <h2 className="font-serif text-4xl md:text-5xl mb-2">Who's in the Room</h2>
             <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Not career consultants. Operators who've built inside companies like Amazon, the Indian Army, and high-growth startups — and now build for yours.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -358,9 +358,9 @@ function HomePage() {
 
           {/* Research & Contributions */}
           <div className="mt-12 border-t border-[var(--color-border)] pt-12">
-            <div className="flex justify-between items-end mb-10">
+            <div className="flex justify-between items-end mb-8">
               <div>
-                <h3 className="font-serif text-3xl md:text-4xl mb-2">What We've Published</h3>
+                <h3 className="font-serif text-3xl md:text-4xl mb-1">What We've Published</h3>
                 <p className="text-[var(--color-text-muted)]">Our practice is informed by published research — not recycled frameworks. Here's what we've put our names on.</p>
               </div>
               <Link to="/research" className="hidden md:inline-flex items-center gap-2 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
@@ -388,10 +388,10 @@ function HomePage() {
       {/* Call to Action / Contact */}
       <section id="contact" className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16">
+          <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h2 className="font-serif text-4xl md:text-5xl mb-6">Clarity Begins With a Conversation.</h2>
-              <p className="text-[var(--color-text-muted)] text-lg mb-8">Tell us what's not working — the structure, the team, the pace. We'll tell you what we can fix and what we can't.</p>
+              <h2 className="font-serif text-4xl md:text-5xl mb-3">Clarity Begins With a Conversation.</h2>
+              <p className="text-[var(--color-text-muted)] text-lg mb-6">Tell us what's not working — the structure, the team, the pace. We'll tell you what we can fix and what we can't.</p>
               <div className="space-y-4 text-sm text-[var(--color-text-muted)]">
                 <p>info@zero2one.in</p>
                 <p>+91 8310777767</p>
