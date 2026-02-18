@@ -44,21 +44,6 @@ const team = [
   }
 ];
 
-const capabilities = [
-  "Governance Architecture",
-  "Performance Frameworks",
-  "Culture Systems",
-  "Leadership Under Pressure",
-  "Strategic Documentation",
-  "Organizational Redesign"
-];
-
-const writingServices = [
-  "Executive Ghostwriting",
-  "Strategic & Technical Writing",
-  "Policy & Research Writing",
-  "Board & Institutional Documentation"
-];
 
 function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -84,6 +69,7 @@ function Navigation() {
           <div className="hidden md:flex gap-10 items-center text-sm">
             <button onClick={() => scrollToSection('offerings')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Services</button>
             <Link to="/impact" className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Impact</Link>
+            <Link to="/research" className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Research</Link>
             <button onClick={() => scrollToSection('approach')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Approach</button>
             <button onClick={() => scrollToSection('collective')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Collective</button>
             <button onClick={() => scrollToSection('contact')} className="px-5 py-2 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm hover:bg-[var(--color-accent-light)] transition-colors">
@@ -98,6 +84,7 @@ function Navigation() {
           <div className="md:hidden mt-6 pb-4 space-y-4 text-sm fade-in">
             <button onClick={() => scrollToSection('offerings')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Services</button>
             <Link to="/impact" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Impact</Link>
+            <Link to="/research" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Research</Link>
             <button onClick={() => scrollToSection('approach')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Approach</button>
             <button onClick={() => scrollToSection('collective')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Collective</button>
             <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Contact</button>
@@ -338,62 +325,29 @@ function HomePage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Research & Contributions */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl mb-4">Research & Contributions</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Theory that informs practice.</p>
-          </div>
-          <div className="space-y-0">
-            {publications.slice(0, 4).map((pub, i) => (
-              <div key={i} className="py-5 border-b border-[var(--color-border)]">
-                <h3 className="font-serif text-lg mb-1">{pub.title}</h3>
-                <span className="text-sm text-[var(--color-text-muted)]">{pub.authors}</span>
+          {/* Research & Contributions */}
+          <div className="mt-16 border-t border-[var(--color-border)] pt-16">
+            <div className="flex justify-between items-end mb-10">
+              <div>
+                <h3 className="font-serif text-3xl md:text-4xl mb-2">Research & Contributions</h3>
+                <p className="text-[var(--color-text-muted)]">Theory that informs practice.</p>
               </div>
-            ))}
-          </div>
-          <Link to="/research" className="inline-flex items-center gap-2 mt-8 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
-            View Full List <ArrowRight size={14} />
-          </Link>
-        </div>
-      </section>
-
-      {/* Deep Capability */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl mb-4">Built for Scale. Designed for Reality.</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Depth that shows in the work, not in the pitch.</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-6">
-            {capabilities.map((cap, i) => (
-              <div key={i} className="py-4 border-b border-[var(--color-border)]">
-                <span className="text-sm">{cap}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Writing & Strategic Communication */}
-      <section className="py-24 md:py-32 bg-[var(--color-text)] text-[var(--color-bg)]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <div>
-              <h2 className="font-serif text-4xl md:text-5xl mb-4 text-[var(--color-bg)]">Clarity in Words. Authority in Positioning.</h2>
-              <p className="text-[#999] text-lg">Strategic communication that builds institutional credibility and executive authority.</p>
+              <Link to="/research" className="hidden md:inline-flex items-center gap-2 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
+                View Full List <ArrowRight size={14} />
+              </Link>
             </div>
             <div className="space-y-0">
-              {writingServices.map((service, i) => (
-                <div key={i} className="py-5 border-b border-white/10">
-                  <span className="text-sm tracking-wide">{service}</span>
+              {publications.slice(0, 4).map((pub, i) => (
+                <div key={i} className="py-5 border-b border-[var(--color-border)]">
+                  <h4 className="font-serif text-lg mb-1">{pub.title}</h4>
+                  <span className="text-sm text-[var(--color-text-muted)]">{pub.authors}</span>
                 </div>
               ))}
             </div>
+            <Link to="/research" className="md:hidden inline-flex items-center gap-2 mt-6 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
+              View Full List <ArrowRight size={14} />
+            </Link>
           </div>
         </div>
       </section>
