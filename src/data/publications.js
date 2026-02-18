@@ -7,7 +7,7 @@ const publications = [
   },
   {
     title: "Hitt's Competencies and Leadership Capabilities in the 21st Century",
-    authors: "Uttam Shri Harsha & Dr. Hema Harsha",
+    authors: "Dr. Hema Harsha & Uttam Shri Harsha",
     venue: "The Southern Economist, Nov 2023",
     reference: "Hitt's Competencies applied to the 21st Century, outlining strategic leadership capabilities. Parallels drawn to MK Gandhi and pre-independence India showcasing the historical accuracy of these skill sets which remain relevant and critical in today's dynamic workforce."
   },
