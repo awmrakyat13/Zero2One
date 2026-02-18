@@ -153,7 +153,7 @@ function HomePage() {
         <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
           <div className="max-w-4xl">
             <h1 className="font-serif text-5xl md:text-7xl leading-[1.1] mb-5 opacity-0 fade-in">
-              Where Strategy Meets Structure.
+              Strategy and Structure: Designed for Scale, Built to Last.
             </h1>
             <div className="flex flex-wrap items-center gap-y-2 text-sm md:text-base text-[var(--color-text-muted)] mb-8 opacity-0 fade-in delay-100 tracking-wide">
               <span>Strategic Advisory</span>
