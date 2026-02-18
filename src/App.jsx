@@ -326,7 +326,7 @@ function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-8">
             <h2 className="font-serif text-4xl md:text-5xl mb-2">Who's in the Room</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Not career consultants. Operators who've built inside companies like Amazon, the Indian Army, and high-growth startups — and now build for yours.</p>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Industry practitioners with institutional depth — from Amazon and high-growth startups to military operations and published research.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {team.map((member, index) => (
