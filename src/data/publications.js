@@ -12,6 +12,12 @@ const publications = [
     reference: "Hitt's Competencies applied to the 21st Century, outlining strategic leadership capabilities. Parallels drawn to MK Gandhi and pre-independence India showcasing the historical accuracy of these skill sets which remain relevant and critical in today's dynamic workforce."
   },
   {
+    title: "Shifting the Contours in Leadership Management Dynamics",
+    authors: "Lt Col L Shri Harsha & Uttam Shri Harsha",
+    venue: "PMI Global Conference 2022, Las Vegas",
+    reference: "Discusses the transformation of leadership and management boundaries as organizations transition toward agile, collaborative, and portfolio-driven operating environments."
+  },
+  {
     title: "Financial Inclusion for Nation Building: The Indian Journey from \"Intent\" to \"Reality\", A Portfolio Management Approach",
     authors: "Lt Col L Shri Harsha",
     venue: "International Conference on Financial Markets and Corporate Finance, Aug 2016",
