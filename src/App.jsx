@@ -11,7 +11,7 @@ import ResearchPage from './pages/ResearchPage';
 
 const team = [
   {
-    name: "Lt Col L Shri Harsha (Retd.), BE, MBA, MBL, PMP, PgMP, DASSM",
+    name: "Lt Col L Shri Harsha (retd), BE, MBA, MBL, PMP, PgMP, DASSM",
     role: "Partner, Strategy & Leadership",
     domain: "Strategic Planning & Leadership Under Pressure",
     bio: "Decorated military leader turned strategy consultant. Brings disciplined execution frameworks and leadership under pressure to complex organizational challenges.",
