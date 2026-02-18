@@ -9,12 +9,12 @@ import CaseStudyPage from './pages/CaseStudyPage';
 
 const team = [
   {
-    name: "Uttam Shri Harsha, BE, MS, MBA, PMP",
-    role: "Founder & Principal",
-    domain: "Operations Architecture & Organizational Design",
-    bio: "Builder of operating systems for growing organizations. Specializes in translating founder vision into scalable structure, process, and governance.",
-    initials: "UH",
-    linkedin: null
+    name: "Lt Col L Shri Harsha (Retd.), BE, MBA, MBL, PMP, PgMP, DASSM",
+    role: "Partner, Strategy & Leadership",
+    domain: "Strategic Planning & Leadership Under Pressure",
+    bio: "Decorated military leader turned strategy consultant. Brings disciplined execution frameworks and leadership under pressure to complex organizational challenges.",
+    initials: "LSH",
+    linkedin: "https://www.linkedin.com/in/ltcol-l-shriharsha-retd/"
   },
   {
     name: "Dr. Hema Harsha, BE, MLM, MBL, MBA, PhD",
@@ -25,20 +25,20 @@ const team = [
     linkedin: "https://www.linkedin.com/in/dr-hema-harsha/"
   },
   {
-    name: "Lt Col L Shri Harsha (Retd.), BE, MBA, MBL, PMP, PgMP, DASSM",
-    role: "Partner, Strategy & Leadership",
-    domain: "Strategic Planning & Leadership Under Pressure",
-    bio: "Decorated military leader turned strategy consultant. Brings disciplined execution frameworks and leadership under pressure to complex organizational challenges.",
-    initials: "LSH",
-    linkedin: "https://www.linkedin.com/in/ltcol-l-shriharsha-retd/"
-  },
-  {
     name: "Shrigauri Naidu, BBA, MBA, PMP",
     role: "Partner, Training & Development",
     domain: "Capability Building & Performance Systems",
     bio: "Specialist in designing training architectures that connect individual capability to organizational performance. Focused on measurable development outcomes.",
     initials: "SN",
     linkedin: "https://www.linkedin.com/in/shrigaurinaidu/"
+  },
+  {
+    name: "Uttam Shri Harsha, BE, MS, MBA, PMP",
+    role: "Founder & Principal",
+    domain: "Operations Architecture & Organizational Design",
+    bio: "Builder of operating systems for growing organizations. Specializes in translating founder vision into scalable structure, process, and governance.",
+    initials: "UH",
+    linkedin: "https://www.linkedin.com/in/uttam-s/"
   }
 ];
 
