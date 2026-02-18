@@ -35,7 +35,7 @@ export default function ResearchPage() {
       {/* Hero */}
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <h1 className="font-serif text-5xl md:text-6xl mb-4">Research That Informs Our Practice</h1>
+          <h1 className="font-serif text-5xl md:text-6xl mb-2">Research That Informs Our Practice</h1>
           <p className="text-xl md:text-2xl text-[var(--color-text-muted)] leading-relaxed">
             Theory that informs practice. Published work by the Zero2One team.
           </p>
@@ -62,8 +62,8 @@ export default function ResearchPage() {
       {/* CTA */}
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl mb-4">Interested in Our Work?</h2>
-          <p className="text-[var(--color-text-muted)] text-lg mb-8">Tell us what you're working on. We'll tell you what's possible, and what isn't.</p>
+          <h2 className="font-serif text-3xl md:text-4xl mb-2">Interested in Our Work?</h2>
+          <p className="text-[var(--color-text-muted)] text-lg mb-6">Tell us what you're working on. We'll tell you what's possible, and what isn't.</p>
           <Link
             to="/#contact"
             className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent-light)] transition-colors"

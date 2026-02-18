@@ -77,7 +77,7 @@ export default function CaseStudyPage() {
             <span className="text-xs text-[var(--color-text-muted)]">·</span>
             <span className="text-xs tracking-widest uppercase text-[var(--color-text-muted)]">{engagement.engagementFocus}</span>
           </div>
-          <h1 className="font-serif text-5xl md:text-6xl mb-4">{engagement.company}</h1>
+          <h1 className="font-serif text-5xl md:text-6xl mb-2">{engagement.company}</h1>
           <p className="text-xl md:text-2xl text-[var(--color-text-muted)] leading-relaxed">{engagement.impactStatement}</p>
         </div>
       </section>
@@ -85,7 +85,7 @@ export default function CaseStudyPage() {
       {/* Context */}
       <section className="pb-16 md:pb-24">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl mb-10">Context</h2>
+          <h2 className="font-serif text-3xl md:text-4xl mb-8">Context</h2>
           <div className={`grid gap-8 mb-10 ${engagement.scale ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
             <div>
               <div className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-2">Industry</div>
@@ -115,7 +115,7 @@ export default function CaseStudyPage() {
       {/* Structural Friction */}
       <section className="py-16 md:py-24 bg-[var(--color-bg-alt)]">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl mb-10">What Was Breaking</h2>
+          <h2 className="font-serif text-3xl md:text-4xl mb-8">What Was Breaking</h2>
           <ul className="space-y-4 border-l-2 border-[var(--color-accent)] pl-6">
             {engagement.structuralFrictions.map((friction, i) => (
               <li key={i} className="text-[var(--color-text-muted)] leading-relaxed">{friction}</li>
@@ -130,7 +130,7 @@ export default function CaseStudyPage() {
       {/* Intervention Architecture */}
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl mb-4">What We Built</h2>
+          <h2 className="font-serif text-3xl md:text-4xl mb-2">What We Built</h2>
           {engagement.interventionPreamble && (
             <p className="text-[var(--color-text-muted)] text-lg leading-relaxed mb-10">{engagement.interventionPreamble}</p>
           )}
@@ -157,7 +157,7 @@ export default function CaseStudyPage() {
       {/* What Changed */}
       <section className="py-16 md:py-24 bg-[var(--color-bg-alt)]">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-serif text-3xl md:text-4xl mb-10">What's Different Now</h2>
+          <h2 className="font-serif text-3xl md:text-4xl mb-8">What's Different Now</h2>
           <ul className="space-y-4 border-l-2 border-[var(--color-accent)] pl-6">
             {engagement.whatChanged.map((outcome, i) => (
               <li key={i} className="text-[var(--color-text-muted)] leading-relaxed">{outcome}</li>
@@ -173,7 +173,7 @@ export default function CaseStudyPage() {
       {resolvedCapabilities.length > 0 && (
         <section className="py-16 md:py-24">
           <div className="max-w-4xl mx-auto px-6">
-            <h2 className="font-serif text-3xl md:text-4xl mb-10">Related Capabilities</h2>
+            <h2 className="font-serif text-3xl md:text-4xl mb-8">Related Capabilities</h2>
             <div className="space-y-0">
               {resolvedCapabilities.map((service) => (
                 <Link
@@ -198,8 +198,8 @@ export default function CaseStudyPage() {
       {/* CTA */}
       <section className="py-16 md:py-24 bg-[var(--color-bg-alt)]">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl mb-4">Facing a Similar Challenge?</h2>
-          <p className="text-[var(--color-text-muted)] text-lg mb-8">Tell us what you're working on. We'll tell you what's possible, and what isn't.</p>
+          <h2 className="font-serif text-3xl md:text-4xl mb-2">Facing a Similar Challenge?</h2>
+          <p className="text-[var(--color-text-muted)] text-lg mb-6">Tell us what you're working on. We'll tell you what's possible, and what isn't.</p>
           <Link
             to="/#contact"
             className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent-light)] transition-colors"
