@@ -360,7 +360,7 @@ function HomePage() {
           <div className="mt-12 border-t border-[var(--color-border)] pt-12">
             <div className="flex justify-between items-end mb-8">
               <div>
-                <h3 className="font-serif text-3xl md:text-4xl mb-1">What We've Published</h3>
+                <h3 className="font-serif text-3xl md:text-4xl mb-1">Research That Informs Our Practice</h3>
                 <p className="text-[var(--color-text-muted)]">Our practice is informed by published research, not recycled frameworks. Here's what we've put our names on.</p>
               </div>
               <Link to="/research" className="hidden md:inline-flex items-center gap-2 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
