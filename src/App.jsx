@@ -15,7 +15,7 @@ const team = [
     name: "Lt Col L Shri Harsha (retd)",
     credentials: "BE, MBA, MBL, PMP, PgMP, DASSM",
     role: "Partner, Strategy & Leadership",
-    bio: "20+ years commanding complex operations in the Indian Army, then applied the same discipline to corporate strategy and governance. Published at PMI Global, Institute of Directors, and Indian Building Congress. Runs engagements the way he ran operations — with clarity, accountability, and zero tolerance for ambiguity.",
+    bio: "20+ years commanding complex operations in the Indian Army, then applied the same discipline to corporate strategy and governance. Published at PMI Global, Institute of Directors, and Indian Building Congress. Runs engagements the way he ran operations: with clarity, accountability, and zero tolerance for ambiguity.",
     initials: "LSH",
     linkedin: "https://www.linkedin.com/in/ltcol-l-shriharsha-retd/",
     previously: ["Indian Army", "PMI", "AECOM", "Jacobs CES"]
@@ -33,7 +33,7 @@ const team = [
     name: "Shrigauri Naidu",
     credentials: "BBA, MBA, PMP",
     role: "Partner, Training & Development",
-    bio: "Former Amazon and Toast — built and scaled training programs inside high-velocity organizations. Knows the difference between training that checks a box and training that changes how people work. Designs capability systems tied to business metrics, not HR compliance.",
+    bio: "Former Amazon and Toast, built and scaled training programs inside high-velocity organizations. Knows the difference between training that checks a box and training that changes how people work. Designs capability systems tied to business metrics, not HR compliance.",
     initials: "SN",
     linkedin: "https://www.linkedin.com/in/shrigaurinaidu/",
     previously: ["Amazon", "Toast"]
@@ -139,10 +139,10 @@ function HomePage() {
   };
 
   const methodologySteps = [
-    { title: "Diagnostic", description: "We map your current structure, decision flows, and pain points against what you're actually trying to achieve. You get a clear, written picture of the gap — not a 90-slide deck." },
+    { title: "Diagnostic", description: "We map your current structure, decision flows, and pain points against what you're actually trying to achieve. You get a clear, written picture of the gap, not a 90-slide deck." },
     { title: "Alignment", description: "We work with your leadership team to agree on what the organization needs to look like, who owns what, and what 'good' means. No alignment, no point building anything." },
-    { title: "Implementation", description: "We build the systems, processes, and governance architecture alongside your team — not in a vacuum. Frameworks get tested in real operating conditions before we call them done." },
-    { title: "Transfer of Ownership", description: "We hand it over. Documentation, training, operating playbooks — everything your team needs to run what we built without calling us." }
+    { title: "Implementation", description: "We build the systems, processes, and governance architecture alongside your team, not in a vacuum. Frameworks get tested in real operating conditions before we call them done." },
+    { title: "Transfer of Ownership", description: "We hand it over. Documentation, training, operating playbooks, everything your team needs to run what we built without calling us." }
   ];
 
   return (
@@ -309,7 +309,7 @@ function HomePage() {
               {[
                 { title: "One-time Engagements", desc: "A defined scope, a fixed timeline, a clear deliverable. For companies that know what's broken." },
                 { title: "Ongoing Advisory Retainers", desc: "Monthly strategic counsel for leadership teams navigating growth, transitions, or complexity they haven't seen before." },
-                { title: "Embedded Execution", desc: "We put someone in the room — working alongside your team, building systems in real time. For when the problem is too deep for advice alone." }
+                { title: "Embedded Execution", desc: "We put someone in the room, working alongside your team, building systems in real time. For when the problem is too deep for advice alone." }
               ].map((model, i) => (
                 <div key={i}>
                   <h3 className="font-medium mb-2">{model.title}</h3>
@@ -326,7 +326,7 @@ function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-8">
             <h2 className="font-serif text-4xl md:text-5xl mb-2">Who's in the Room</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Industry practitioners with institutional depth — from Amazon and high-growth startups to military operations and published research.</p>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Industry practitioners with institutional depth, from Amazon and high-growth startups to military operations and published research.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {team.map((member, index) => (
@@ -361,7 +361,7 @@ function HomePage() {
             <div className="flex justify-between items-end mb-8">
               <div>
                 <h3 className="font-serif text-3xl md:text-4xl mb-1">What We've Published</h3>
-                <p className="text-[var(--color-text-muted)]">Our practice is informed by published research — not recycled frameworks. Here's what we've put our names on.</p>
+                <p className="text-[var(--color-text-muted)]">Our practice is informed by published research, not recycled frameworks. Here's what we've put our names on.</p>
               </div>
               <Link to="/research" className="hidden md:inline-flex items-center gap-2 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
                 View Full List <ArrowRight size={14} />
@@ -391,7 +391,7 @@ function HomePage() {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h2 className="font-serif text-4xl md:text-5xl mb-3">Clarity Begins With a Conversation.</h2>
-              <p className="text-[var(--color-text-muted)] text-lg mb-6">Tell us what's not working — the structure, the team, the pace. We'll tell you what we can fix and what we can't.</p>
+              <p className="text-[var(--color-text-muted)] text-lg mb-6">Tell us what's not working: the structure, the team, the pace. We'll tell you what we can fix and what we can't.</p>
               <div className="space-y-4 text-sm text-[var(--color-text-muted)]">
                 <p>info@zero2one.in</p>
                 <p>+91 8310777767</p>

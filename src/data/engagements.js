@@ -61,7 +61,7 @@ const engagements = [
     scale: "",
     engagementFocus: "Commercial Enablement & Operational Performance Architecture",
     impactStatement: "A growing B2B company where teams were busy but misaligned. We installed the operating rhythm that connected effort to results.",
-    triggerMoment: "The company was expanding fast — more clients, more products, more people — but the teams were operating in parallel instead of together. Sales didn't connect to marketing, product feedback was informal, and nobody had a shared view of what 'good' looked like.",
+    triggerMoment: "The company was expanding fast, more clients, more products, more people, but the teams were operating in parallel instead of together. Sales didn't connect to marketing, product feedback was informal, and nobody had a shared view of what 'good' looked like.",
     triggerMomentExtra: "The engagement extended beyond advisory into embedded commercial and operational contribution.",
     structuralFrictions: [
       "Inconsistent performance visibility across teams",
@@ -98,7 +98,7 @@ const engagements = [
     ],
     interventionFootnote: "The engagement emphasized systemization, not surface-level process edits.",
     whatChanged: [
-      "Sales stages are defined and tracked — leads don't fall through the cracks",
+      "Sales stages are defined and tracked, leads don't fall through the cracks",
       "Marketing and sales now operate off the same playbook",
       "Leadership has a single dashboard for performance across all teams",
       "Every function has clear ownership over its decisions and deliverables",
@@ -147,7 +147,7 @@ const engagements = [
       "Performance reviews follow a consistent structure with real metrics behind them",
       "KPIs are tied to business outcomes, not activity counts",
       "Governance cadence is documented and enforced",
-      "Leaders know what they own — and what they don't"
+      "Leaders know what they own, and what they don't"
     ],
     whatChangedSummary: "The organization tightened its structure without losing its momentum.",
     relatedCapabilities: ["clarify", "align", "execute"]

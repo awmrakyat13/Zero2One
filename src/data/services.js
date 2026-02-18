@@ -62,7 +62,7 @@ const services = [
   {
     title: "Articulate",
     slug: "articulate",
-    summary: "Your thinking is better than your documents. We write what matters — board decks, policy, positioning.",
+    summary: "Your thinking is better than your documents. We write what matters: board decks, policy, positioning.",
     tagline: "If you can't articulate it, you can't scale it.",
     ctaLine: "Need your thinking to land? Let's talk about what you need written.",
     description: [
