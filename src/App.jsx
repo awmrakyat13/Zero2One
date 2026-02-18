@@ -301,7 +301,7 @@ function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
             <h2 className="font-serif text-4xl md:text-5xl mb-4">Who's in the Room</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Operators and practitioners. No bench strength, no junior staffing.</p>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Industry practitioners with institutional depth and published research.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {team.map((member, index) => (
