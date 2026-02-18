@@ -16,7 +16,8 @@ const team = [
     domain: "Strategic Planning & Leadership Under Pressure",
     bio: "Decorated military leader turned strategy consultant. Brings disciplined execution frameworks and leadership under pressure to complex organizational challenges.",
     initials: "LSH",
-    linkedin: "https://www.linkedin.com/in/ltcol-l-shriharsha-retd/"
+    linkedin: "https://www.linkedin.com/in/ltcol-l-shriharsha-retd/",
+    previously: ["Indian Army", "PMI", "AECOM", "Jacobs CES"]
   },
   {
     name: "Dr. Hema Harsha, BE, MLM, MBL, MBA, PhD",
@@ -24,7 +25,8 @@ const team = [
     domain: "Leadership Development & Corporate Training",
     bio: "Academician and corporate trainer with deep expertise in leadership development, organizational behavior, and institutional capacity building.",
     initials: "HH",
-    linkedin: "https://www.linkedin.com/in/dr-hema-harsha/"
+    linkedin: "https://www.linkedin.com/in/dr-hema-harsha/",
+    previously: ["LCC Infotech", "MP Birla Institute of Management"]
   },
   {
     name: "Shrigauri Naidu, BBA, MBA, PMP",
@@ -32,7 +34,8 @@ const team = [
     domain: "Capability Building & Performance Systems",
     bio: "Specialist in designing training architectures that connect individual capability to organizational performance. Focused on measurable development outcomes.",
     initials: "SN",
-    linkedin: "https://www.linkedin.com/in/shrigaurinaidu/"
+    linkedin: "https://www.linkedin.com/in/shrigaurinaidu/",
+    previously: ["Amazon", "Toast"]
   },
   {
     name: "Uttam Shri Harsha, BE, MS, MBA, PMP",
@@ -40,7 +43,8 @@ const team = [
     domain: "Operations Architecture & Organizational Design",
     bio: "Builder of operating systems for growing organizations. Specializes in translating founder vision into scalable structure, process, and governance.",
     initials: "UH",
-    linkedin: "https://www.linkedin.com/in/uttam-s/"
+    linkedin: "https://www.linkedin.com/in/uttam-s/",
+    previously: ["Amazon", "Newell Brands", "Toast"]
   }
 ];
 
@@ -321,6 +325,11 @@ function HomePage() {
                   <p className="text-sm text-[var(--color-accent)] mb-1">{member.role}</p>
                   <p className="text-xs text-[var(--color-text-muted)] mb-3 tracking-wide uppercase">{member.domain}</p>
                   <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">{member.bio}</p>
+                  {member.previously && (
+                    <p className="text-xs text-[var(--color-text-muted)] mt-3 pt-3 border-t border-[var(--color-border)]">
+                      <span className="tracking-widest uppercase">Previously:</span> {member.previously.join(' · ')}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
