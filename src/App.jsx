@@ -188,7 +188,7 @@ function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-10">
             <h2 className="font-serif text-4xl md:text-5xl mb-4">What We Install</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Operating architecture for companies that have outgrown how they run.</p>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Four pillars of organizational excellence, each designed to compound on the others.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {services.map((item, index) => (
