@@ -6,6 +6,8 @@ import ServicePage from './pages/ServicePage';
 import engagements from './data/engagements';
 import ImpactPage from './pages/ImpactPage';
 import CaseStudyPage from './pages/CaseStudyPage';
+import publications from './data/publications';
+import ResearchPage from './pages/ResearchPage';
 
 const team = [
   {
@@ -339,6 +341,27 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Research & Contributions */}
+      <section className="py-24 md:py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl mb-4">Research & Contributions</h2>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Theory that informs practice.</p>
+          </div>
+          <div className="space-y-0">
+            {publications.slice(0, 4).map((pub, i) => (
+              <div key={i} className="py-5 border-b border-[var(--color-border)]">
+                <h3 className="font-serif text-lg mb-1">{pub.title}</h3>
+                <span className="text-sm text-[var(--color-text-muted)]">{pub.authors}</span>
+              </div>
+            ))}
+          </div>
+          <Link to="/research" className="inline-flex items-center gap-2 mt-8 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
+            View Full List <ArrowRight size={14} />
+          </Link>
+        </div>
+      </section>
+
       {/* Deep Capability */}
       <section className="py-24 md:py-32">
         <div className="max-w-6xl mx-auto px-6">
@@ -437,6 +460,7 @@ export default function App() {
         <Route path="/services/:slug" element={<ServicePage />} />
         <Route path="/impact" element={<ImpactPage />} />
         <Route path="/impact/:slug" element={<CaseStudyPage />} />
+        <Route path="/research" element={<ResearchPage />} />
       </Routes>
       <footer className="border-t-2 border-t-[var(--color-accent)] py-10 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[var(--color-text-muted)]">
