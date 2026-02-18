@@ -24,7 +24,7 @@ export default function TeamMemberPage() {
         '@context': 'https://schema.org',
         '@type': 'Person',
         name: member.name,
-        jobTitle: member.role,
+        jobTitle: member.domain ? `${member.role} | ${member.domain}` : member.role,
         description: member.bio,
         url: `https://zero2one.in/team/${member.slug}`,
         worksFor: {
@@ -82,7 +82,10 @@ export default function TeamMemberPage() {
                 )}
               </div>
               <p className="text-xs text-[var(--color-text-muted)] mb-1">{member.credentials}</p>
-              <p className="text-lg text-[var(--color-accent)]">{member.role}</p>
+              <p className="text-lg text-[var(--color-accent)]">
+                {member.role}
+                {member.domain && <><span className="mx-2 text-[var(--color-border)]">|</span>{member.domain}</>}
+              </p>
             </div>
           </div>
         </div>
