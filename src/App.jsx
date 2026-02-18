@@ -381,7 +381,7 @@ function HomePage() {
           <div className="grid md:grid-cols-2 gap-16">
             <div>
               <h2 className="font-serif text-4xl md:text-5xl mb-6">Clarity Begins With a Conversation.</h2>
-              <p className="text-[var(--color-text-muted)] text-lg mb-8">Tell us what you are building, fixing, or rethinking. We will tell you honestly if and how we can help.</p>
+              <p className="text-[var(--color-text-muted)] text-lg mb-8">Tell us what you are building, fixing, or rethinking. We'll tell you what's possible — and what isn't.</p>
               <div className="space-y-4 text-sm text-[var(--color-text-muted)]">
                 <p>info@zero2one.in</p>
                 <p>+91 8310777767</p>
