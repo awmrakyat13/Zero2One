@@ -199,7 +199,7 @@ export default function CaseStudyPage() {
       <section className="py-16 md:py-24 bg-[var(--color-bg-alt)]">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="font-serif text-3xl md:text-4xl mb-4">Facing a Similar Challenge?</h2>
-          <p className="text-[var(--color-text-muted)] text-lg mb-8">Tell us what you're working on. We'll tell you what's possible — and what isn't.</p>
+          <p className="text-[var(--color-text-muted)] text-lg mb-8">Tell us what you're working on. We'll tell you what's possible, and what isn't.</p>
           <Link
             to="/#contact"
             className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm tracking-wide hover:bg-[var(--color-accent-light)] transition-colors"
