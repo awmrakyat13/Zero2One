@@ -11,7 +11,7 @@ export default function CaseStudyPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
     if (engagement) {
-      document.title = `${engagement.company},Impact,Zero2One Consulting`;
+      document.title = `${engagement.company} - Impact - Zero2One Consulting`;
 
       const metaDescription = document.querySelector('meta[name="description"]');
       const originalDescription = metaDescription?.getAttribute('content');
@@ -24,7 +24,7 @@ export default function CaseStudyPage() {
       script.textContent = JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'CreativeWork',
-        name: `${engagement.company},${engagement.engagementFocus}`,
+        name: `${engagement.company} - ${engagement.engagementFocus}`,
         description: engagement.impactStatement,
         url: `https://zero2one.in/impact/${engagement.slug}`,
         publisher: {

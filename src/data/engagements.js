@@ -4,7 +4,7 @@ const engagements = [
     company: "Nikara Realty",
     industry: "B2C Real Estate Intermediary",
     orgType: "Lead-driven buyer–seller matching",
-    scale: "Founder-led, growth-phase,Bengaluru",
+    scale: "Founder-led, growth-phase, Bengaluru",
     engagementFocus: "Organizational Architecture & Governance Installation",
     impactStatement: "Transitioned a founder-led real estate intermediary from personality-driven execution to documented operating structure.",
     triggerMoment: "The organization was operating on a founder-built foundation with increasing lead volume, team expansion, and rising coordination complexity.",
