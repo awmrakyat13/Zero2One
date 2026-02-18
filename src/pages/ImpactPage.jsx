@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import engagements from '../data/engagements';
+import impactMetrics from '../data/impactMetrics';
 
 export default function ImpactPage() {
   useEffect(() => {
@@ -56,6 +57,21 @@ export default function ImpactPage() {
           <p className="text-xl md:text-2xl text-[var(--color-text-muted)] leading-relaxed">
             Selected engagements where organizational architecture drove measurable change.
           </p>
+        </div>
+      </section>
+
+      {/* Collective Impact */}
+      <section className="bg-[var(--color-bg-alt)] py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-6">
+          <p className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] mb-10">Collective Impact</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {impactMetrics.map((metric) => (
+              <div key={metric.label} className="border-l-2 border-[var(--color-accent)] pl-4">
+                <p className="font-serif text-3xl md:text-4xl mb-1">{metric.value}</p>
+                <p className="text-xs tracking-widest uppercase text-[var(--color-text-muted)]">{metric.label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
