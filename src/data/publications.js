@@ -1,19 +1,19 @@
 const publications = [
   {
     title: "The Privacy Paradox of DPDP Act 2023: The Dual Architecture of India's Digital Social Contract",
-    authors: "Uttam Shri Harsha",
+    authors: "Uttam S",
     venue: "Institution of Scientific Research JHSS, Dec 2025",
     reference: "A theoretical review of India's Data Protection Act as a contractual relationship between State and Citizen."
   },
   {
     title: "Hitt's Competencies and Leadership Capabilities in the 21st Century",
-    authors: "Dr. Hema Harsha & Uttam Shri Harsha",
+    authors: "Dr. Hema Harsha & Uttam S",
     venue: "The Southern Economist, Nov 2023",
     reference: "Hitt's Competencies applied to the 21st Century, outlining strategic leadership capabilities. Parallels drawn to MK Gandhi and pre-independence India showcasing the historical accuracy of these skill sets which remain relevant and critical in today's dynamic workforce."
   },
   {
     title: "Shifting the Contours in Leadership Management Dynamics",
-    authors: "Lt Col L Shri Harsha (retd) & Uttam Shri Harsha",
+    authors: "Lt Col L Shri Harsha (retd) & Uttam S",
     venue: "PMI Global Conference 2022, Las Vegas",
     reference: "Discusses the transformation of leadership and management boundaries as organizations transition toward agile, collaborative, and portfolio-driven operating environments."
   },

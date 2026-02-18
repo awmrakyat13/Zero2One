@@ -76,7 +76,7 @@ const team = [
   },
   {
     slug: "uttam-shri-harsha",
-    name: "Uttam Shri Harsha",
+    name: "Uttam S",
     credentials: "BE, MS, MBA, PMP",
     role: "Founder",
     domain: "Operations & Organizational Design",
