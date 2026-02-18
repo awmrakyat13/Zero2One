@@ -149,8 +149,8 @@ function HomePage() {
     <>
 
       {/* Hero */}
-      <section className="min-h-screen flex items-center pt-20">
-        <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
+      <section className="min-h-[85vh] flex items-center pt-20">
+        <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
           <div className="max-w-4xl">
             <h1 className="font-serif text-5xl md:text-7xl leading-[1.1] mb-8 opacity-0 fade-in">
               Where Strategy Meets Structure.
@@ -179,14 +179,14 @@ function HomePage() {
       </section>
 
       {/* Qualifier Line */}
-      <p className="text-center text-sm tracking-[0.15em] uppercase text-[var(--color-text-muted)] py-8 px-6">
+      <p className="text-center text-sm tracking-[0.15em] uppercase text-[var(--color-text-muted)] py-4 px-6">
         For founders, CXOs, and leadership teams building companies that have outgrown how they operate.
       </p>
 
       {/* What We Install */}
-      <section id="offerings" className="py-24 md:py-32 bg-[var(--color-bg-alt)]">
+      <section id="offerings" className="py-16 md:py-24 bg-[var(--color-bg-alt)]">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-16">
+          <div className="mb-10">
             <h2 className="font-serif text-4xl md:text-5xl mb-4">What We Install</h2>
             <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Operating architecture for companies that have outgrown how they run.</p>
           </div>
@@ -232,7 +232,7 @@ function HomePage() {
           </div>
 
           {/* Case Studies */}
-          <div className="mt-16 border-t border-[var(--color-border)] pt-16">
+          <div className="mt-12 border-t border-[var(--color-border)] pt-12">
             <div className="flex justify-between items-end mb-10">
               <div>
                 <h3 className="font-serif text-3xl md:text-4xl mb-2">Where We've Done It</h3>
@@ -281,16 +281,16 @@ function HomePage() {
       </section>
 
       {/* Social Proof Strip */}
-      <div className="py-10 text-center">
+      <div className="py-6 text-center">
         <p className="text-lg md:text-xl text-[var(--color-accent)] tracking-wide">
           {impactMetrics[0].value} engagements across {impactMetrics[1].value} industries. {impactMetrics[2].value} professionals impacted.
         </p>
       </div>
 
       {/* How We Work */}
-      <section id="approach" className="py-24 md:py-32">
+      <section id="approach" className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-16">
+          <div className="mb-10">
             <h2 className="font-serif text-4xl md:text-5xl mb-4">How We Work</h2>
             <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">A process built to transfer ownership, not create dependency.</p>
           </div>
@@ -322,9 +322,9 @@ function HomePage() {
       </section>
 
       {/* The Collective */}
-      <section id="collective" className="py-24 md:py-32 bg-[var(--color-bg-alt)]">
+      <section id="collective" className="py-16 md:py-24 bg-[var(--color-bg-alt)]">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="mb-16">
+          <div className="mb-10">
             <h2 className="font-serif text-4xl md:text-5xl mb-4">Who's in the Room</h2>
             <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Not career consultants. Operators who've built inside companies like Amazon, the Indian Army, and high-growth startups — and now build for yours.</p>
           </div>
@@ -357,7 +357,7 @@ function HomePage() {
           </div>
 
           {/* Research & Contributions */}
-          <div className="mt-16 border-t border-[var(--color-border)] pt-16">
+          <div className="mt-12 border-t border-[var(--color-border)] pt-12">
             <div className="flex justify-between items-end mb-10">
               <div>
                 <h3 className="font-serif text-3xl md:text-4xl mb-2">What We've Published</h3>
@@ -386,7 +386,7 @@ function HomePage() {
       </section>
 
       {/* Call to Action / Contact */}
-      <section id="contact" className="py-24 md:py-32">
+      <section id="contact" className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16">
             <div>
@@ -449,15 +449,15 @@ export default function App() {
         <Route path="/impact/:slug" element={<CaseStudyPage />} />
         <Route path="/research" element={<ResearchPage />} />
       </Routes>
-      <footer className="border-t-2 border-t-[var(--color-accent)] py-10 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[var(--color-text-muted)]">
-          <p>&copy; {new Date().getFullYear()} Zero2One Consulting. All rights reserved.</p>
-          <div className="flex gap-6">
+      <footer className="border-t-2 border-t-[var(--color-accent)] py-8 px-6">
+        <div className="max-w-6xl mx-auto text-center text-xs text-[var(--color-text-muted)] space-y-3">
+          <div className="flex justify-center gap-6">
             <Link to="/#offerings" className="hover:text-[var(--color-text)] transition-colors">Services</Link>
             <Link to="/impact" className="hover:text-[var(--color-text)] transition-colors">Case Studies</Link>
             <Link to="/research" className="hover:text-[var(--color-text)] transition-colors">Research</Link>
           </div>
           <p>info@zero2one.in</p>
+          <p>&copy; {new Date().getFullYear()} Zero2One Consulting. All rights reserved.</p>
         </div>
       </footer>
     </div>
