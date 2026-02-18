@@ -67,11 +67,11 @@ function Navigation() {
             Zero2One
           </Link>
           <div className="hidden md:flex gap-10 items-center text-sm">
-            <button onClick={() => scrollToSection('offerings')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">The Work</button>
-            <Link to="/impact" className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">The Record</Link>
-            <Link to="/research" className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">The Thought</Link>
-            <button onClick={() => scrollToSection('approach')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">The Method</button>
-            <button onClick={() => scrollToSection('collective')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">The Team</button>
+            <button onClick={() => scrollToSection('offerings')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Work</button>
+            <Link to="/impact" className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Record</Link>
+            <Link to="/research" className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Thought</Link>
+            <button onClick={() => scrollToSection('approach')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Method</button>
+            <button onClick={() => scrollToSection('collective')} className="text-[var(--color-text-muted)] hover:text-[var(--color-text)] transition-colors">Team</button>
             <button onClick={() => scrollToSection('contact')} className="px-5 py-2 bg-[var(--color-accent)] text-[var(--color-bg)] text-sm hover:bg-[var(--color-accent-light)] transition-colors">
               Contact Us
             </button>
@@ -82,11 +82,11 @@ function Navigation() {
         </div>
         {mobileMenuOpen && (
           <div className="md:hidden mt-6 pb-4 space-y-4 text-sm fade-in">
-            <button onClick={() => scrollToSection('offerings')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">The Work</button>
-            <Link to="/impact" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left py-2 text-[var(--color-text-muted)]">The Record</Link>
-            <Link to="/research" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left py-2 text-[var(--color-text-muted)]">The Thought</Link>
-            <button onClick={() => scrollToSection('approach')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">The Method</button>
-            <button onClick={() => scrollToSection('collective')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">The Team</button>
+            <button onClick={() => scrollToSection('offerings')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Work</button>
+            <Link to="/impact" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Record</Link>
+            <Link to="/research" onClick={() => setMobileMenuOpen(false)} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Thought</Link>
+            <button onClick={() => scrollToSection('approach')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Method</button>
+            <button onClick={() => scrollToSection('collective')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Team</button>
             <button onClick={() => scrollToSection('contact')} className="block w-full text-left py-2 text-[var(--color-text-muted)]">Contact</button>
           </div>
         )}
@@ -170,8 +170,8 @@ function HomePage() {
       <section id="offerings" className="py-24 md:py-32 bg-[var(--color-bg-alt)]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl mb-4">The Work</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Four pillars of organizational excellence, each designed to compound on the others.</p>
+            <h2 className="font-serif text-4xl md:text-5xl mb-4">What We Install</h2>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Operating architecture for companies that have outgrown their structure.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {services.map((item, index) => (
@@ -218,8 +218,8 @@ function HomePage() {
           <div className="mt-16 border-t border-[var(--color-border)] pt-16">
             <div className="flex justify-between items-end mb-10">
               <div>
-                <h3 className="font-serif text-3xl md:text-4xl mb-2">The Record</h3>
-                <p className="text-[var(--color-text-muted)]">Structure applied. Outcomes delivered.</p>
+                <h3 className="font-serif text-3xl md:text-4xl mb-2">Where We've Done It</h3>
+                <p className="text-[var(--color-text-muted)]">Engagements with outcomes you can trace.</p>
               </div>
               <Link to="/impact" className="hidden md:inline-flex items-center gap-2 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
                 View all <ArrowRight size={14} />
@@ -267,8 +267,8 @@ function HomePage() {
       <section id="approach" className="py-24 md:py-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl mb-4">The Method</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">A structured methodology that builds internal capability, not dependency.</p>
+            <h2 className="font-serif text-4xl md:text-5xl mb-4">How We Work</h2>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">A process built to transfer ownership, not create dependency.</p>
           </div>
           <div className="grid md:grid-cols-4 gap-8 mb-16">
             {["Diagnostic", "Alignment", "Implementation", "Transfer of Ownership"].map((step, i) => (
@@ -300,8 +300,8 @@ function HomePage() {
       <section id="collective" className="py-24 md:py-32 bg-[var(--color-bg-alt)]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl mb-4">The Team</h2>
-            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Practitioners with institutional experience, not theorists with frameworks.</p>
+            <h2 className="font-serif text-4xl md:text-5xl mb-4">Who's in the Room</h2>
+            <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Operators and practitioners. No bench strength, no junior staffing.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {team.map((member, index) => (
@@ -330,8 +330,8 @@ function HomePage() {
           <div className="mt-16 border-t border-[var(--color-border)] pt-16">
             <div className="flex justify-between items-end mb-10">
               <div>
-                <h3 className="font-serif text-3xl md:text-4xl mb-2">The Thought</h3>
-                <p className="text-[var(--color-text-muted)]">Theory that informs practice.</p>
+                <h3 className="font-serif text-3xl md:text-4xl mb-2">What We Think About</h3>
+                <p className="text-[var(--color-text-muted)]">Published positions on leadership, governance, and organizational design.</p>
               </div>
               <Link to="/research" className="hidden md:inline-flex items-center gap-2 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors">
                 View Full List <ArrowRight size={14} />
