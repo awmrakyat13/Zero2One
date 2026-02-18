@@ -11,36 +11,36 @@ import ResearchPage from './pages/ResearchPage';
 
 const team = [
   {
-    name: "Lt Col L Shri Harsha (retd), BE, MBA, MBL, PMP, PgMP, DASSM",
+    name: "Lt Col L Shri Harsha (retd)",
+    credentials: "BE, MBA, MBL, PMP, PgMP, DASSM",
     role: "Partner, Strategy & Leadership",
-    domain: "Strategic Planning & Leadership Under Pressure",
     bio: "Decorated military leader turned strategy consultant. Brings disciplined execution frameworks and leadership under pressure to complex organizational challenges.",
     initials: "LSH",
     linkedin: "https://www.linkedin.com/in/ltcol-l-shriharsha-retd/",
     previously: ["Indian Army", "PMI", "AECOM", "Jacobs CES"]
   },
   {
-    name: "Dr. Hema Harsha, BE, MLM, MBL, MBA, PhD",
+    name: "Dr. Hema Harsha",
+    credentials: "BE, MLM, MBL, MBA, PhD",
     role: "Partner, Training & Academic Excellence",
-    domain: "Leadership Development & Corporate Training",
     bio: "Academician and corporate trainer with deep expertise in leadership development, organizational behavior, and institutional capacity building.",
     initials: "HH",
     linkedin: "https://www.linkedin.com/in/dr-hema-harsha/",
     previously: ["LCC Infotech", "MP Birla Institute of Management"]
   },
   {
-    name: "Shrigauri Naidu, BBA, MBA, PMP",
+    name: "Shrigauri Naidu",
+    credentials: "BBA, MBA, PMP",
     role: "Partner, Training & Development",
-    domain: "Capability Building & Performance Systems",
     bio: "Specialist in designing training architectures that connect individual capability to organizational performance. Focused on measurable development outcomes.",
     initials: "SN",
     linkedin: "https://www.linkedin.com/in/shrigaurinaidu/",
     previously: ["Amazon", "Toast"]
   },
   {
-    name: "Uttam Shri Harsha, BE, MS, MBA, PMP",
+    name: "Uttam Shri Harsha",
+    credentials: "BE, MS, MBA, PMP",
     role: "Founder & Principal",
-    domain: "Operations Architecture & Organizational Design",
     bio: "Builder of operating systems for growing organizations. Specializes in translating founder vision into scalable structure, process, and governance.",
     initials: "UH",
     linkedin: "https://www.linkedin.com/in/uttam-s/",
@@ -322,8 +322,8 @@ function HomePage() {
                       </a>
                     )}
                   </div>
-                  <p className="text-sm text-[var(--color-accent)] mb-1">{member.role}</p>
-                  <p className="text-xs text-[var(--color-text-muted)] mb-3 tracking-wide uppercase">{member.domain}</p>
+                  <p className="text-xs text-[var(--color-text-muted)] mb-1">{member.credentials}</p>
+                  <p className="text-sm text-[var(--color-accent)] mb-3">{member.role}</p>
                   <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">{member.bio}</p>
                   {member.previously && (
                     <p className="text-xs text-[var(--color-text-muted)] mt-3 pt-3 border-t border-[var(--color-border)]">
