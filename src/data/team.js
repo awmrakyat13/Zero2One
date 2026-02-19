@@ -75,6 +75,33 @@ const team = [
     whatTheyBring: "The lens of someone who has built inside companies where training is not optional, it is operational infrastructure. Shrigauri designs capability systems that tie directly to business performance, not HR compliance."
   },
   {
+    slug: "dr-n-muniraju",
+    name: "Dr. N. Muniraju",
+    credentials: "B.Sc (Agriculture), M.Sc (Dairy Technology), Ph.D (Dairy Technology), CAIIB I & II",
+    role: "Advisor",
+    domain: "Financial Governance & Institutional Systems",
+    bio: "Retired General Manager (HRM) from Bank of Maharashtra with over three decades in banking governance, financial oversight, credit architecture, and enterprise-scale HR systems. Brings deep exposure to regulatory discipline, zonal operations, capital oversight, and full-lifecycle employee governance. At Zero2One, he strengthens the firm's advisory depth in financial governance, institutional systems, and risk-aware growth design.",
+    initials: "NM",
+    linkedin: null,
+    previously: ["Bank of Maharashtra"],
+    experience: [
+      "Led large-scale zonal banking operations across Mumbai, Bengaluru, and Goa, overseeing diverse retail, MSME, and corporate portfolios",
+      "Managed corporate finance branches handling high-value credit proposals and complex financial structuring",
+      "Directed enterprise-wide HRM functions covering recruitment, performance governance, workforce planning, and exit frameworks",
+      "Oversaw recovery, compromise proposals, and provisioning assessment at Head Office level",
+      "Conducted structured interviews and evaluation panels for national-level banking recruitment through IBPS (Western Grid) and Gramin Bank Probationary Officer panels"
+    ],
+    accomplishments: [
+      "Headed three major banking zones — Mumbai, Bengaluru, and Goa — with operational accountability across credit, retail, and compliance functions",
+      "Led enterprise-level HR governance ensuring structured workforce lifecycle management from entry to exit",
+      "Managed large-scale credit monitoring and provisioning frameworks for institutional risk control",
+      "Strengthened liaison systems with government agencies to expand institutional business portfolios",
+      "Oversaw recovery and restructuring processes for high-value accounts, safeguarding capital discipline"
+    ],
+    quote: "Growth without financial discipline and governance clarity eventually weakens even the strongest organizations. Institutions are built on systems, not sentiment.",
+    whatTheyBring: "Dr. Muniraju anchors Zero2One's advisory engagements in institutional rigor. He brings financial governance discipline, risk architecture insight, capital oversight logic, and large-scale HR systems thinking. For clients, this translates into structured financial oversight, compliance-aligned governance frameworks, risk-aware growth planning, and institutional-grade operational maturity — ensuring scale is not only ambitious, but sustainable."
+  },
+  {
     slug: "uttam-shri-harsha",
     name: "Uttam S",
     credentials: "BE, MS, MBA, PMP",
