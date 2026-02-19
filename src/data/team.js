@@ -77,8 +77,8 @@ const team = [
   {
     slug: "dr-n-muniraju",
     name: "Dr. N. Muniraju",
-    credentials: "B.Sc (Agriculture), M.Sc (Dairy Technology), Ph.D (Dairy Technology), CAIIB I & II",
-    role: "Advisor",
+    credentials: "B.Sc, M.Sc, Ph.D, CAIIB I & II",
+    role: "Partner",
     domain: "Financial Governance & Institutional Systems",
     bio: "Retired General Manager (HRM) from Bank of Maharashtra with over three decades in banking governance, financial oversight, credit architecture, and enterprise-scale HR systems. Brings deep exposure to regulatory discipline, zonal operations, capital oversight, and full-lifecycle employee governance. At Zero2One, he strengthens the firm's advisory depth in financial governance, institutional systems, and risk-aware growth design.",
     initials: "NM",
