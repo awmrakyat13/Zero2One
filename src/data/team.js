@@ -109,24 +109,26 @@ const team = [
     credentials: "BE, MS, MBA, PMP",
     role: "Founder",
     domain: "Operations & Organizational Design",
-    bio: "Former Amazon, Newell Brands, and Toast. Has spent his career inside companies that were scaling fast and breaking things along the way. Founded Zero2One to help growing companies install the operating architecture that makes growth sustainable instead of chaotic.",
+    bio: "Uttam Shri Harsha is an organizational systems strategist who works at the intersection of strategy, structure, and execution architecture. With experience across global enterprises and high-growth environments, he has built and redesigned operating models across multi-country ecosystems. As Founder of Zero2One, his focus is not merely operational efficiency — but structural maturity. He works with leadership teams to translate strategic intent into governance clarity, defined ownership, and repeatable systems that reduce institutional fragility.",
     initials: "UH",
     linkedin: "https://www.linkedin.com/in/uttam-s/",
-    previously: ["Amazon", "Newell Brands", "Toast"],
+    previously: ["Toast Inc.", "Amazon Web Services", "Newell Brands Inc.", "Amazon Retail", "Amazon Launchpad", "Costco"],
     experience: [
-      "Operated inside Amazon, Newell Brands, and Toast during periods of rapid scaling and organizational complexity",
-      "Built and refined operating systems, governance frameworks, and cross-functional processes at scale",
-      "Founded Zero2One Consulting to bring operator experience to growing companies",
-      "Published researcher on data protection policy and organizational governance"
+      "Designed and led multi-country operating systems across distributed global teams",
+      "Built governance frameworks and workflow architectures supporting large-scale, cross-functional programs",
+      "Partnered with engineering, HR, and executive leadership to align operational design with strategic direction",
+      "Led supply and fulfillment transformations in high-volume, performance-sensitive environments",
+      "Drove structured organizational transitions during scale, consolidation, and international expansion phases"
     ],
     accomplishments: [
-      "Founded Zero2One Consulting, delivering 50+ engagements across 12 industries",
-      "Built operating architecture for companies ranging from founder-led startups to multi-department enterprises",
-      "Published research on India's DPDP Act and the architecture of digital social contracts",
-      "Designed scalable governance and performance systems adopted by organizations across real estate, B2B services, and institutional enterprises"
+      "Architected operating model redesigns across global organizations handling complex, multi-site coordination",
+      "Led large-scale structural transitions, including fulfillment consolidation and 3PL operating redesign",
+      "Published research on leadership competencies and modern organizational capability in Southern Economist",
+      "Speaker at PMI Global Summit (2022) on leadership dynamics in evolving program environments",
+      "Contributed to analytics-driven organizational research at the University of Washington"
     ],
-    quote: "Growth without structure is not growth. It is accumulation.",
-    whatTheyBring: "The perspective of someone who has been inside companies that were scaling fast and breaking things along the way. Uttam builds the operating architecture that makes growth sustainable, not just survivable."
+    quote: "I built Zero2One because I've seen capable founders lose momentum not from lack of vision, but from lack of structure. Strategy without operating clarity becomes noise. Growth without governance becomes fragility. Zero2One exists to bring discipline to ambition — to help organizations move from personality-driven execution to system-led maturity. When structure carries the weight, founders are finally free to lead.",
+    whatTheyBring: "Uttam anchors Zero2One's structural advisory lens. He brings operating model clarity, governance design discipline, and the ability to convert strategic ambition into institutional capability. For clients, this means reduced founder dependency, defined accountability systems, measurable performance logic, and operating rhythms that endure beyond personality. His role is to ensure that growth does not outpace structure — and that organizations mature intentionally, not accidentally."
   }
 ];
 
