@@ -150,7 +150,10 @@ const team = [
       "Speaker at PMI Global Summit (2022) on leadership dynamics in evolving program environments",
       "Contributed to analytics-driven organizational research at the University of Washington"
     ],
-    quote: "I built Zero2One because I've seen capable founders lose momentum not from lack of vision, but from lack of structure. Strategy without operating clarity becomes noise. Growth without governance becomes fragility. Zero2One exists to bring discipline to ambition, to help organizations move from personality-driven execution to system-led maturity. When structure carries the weight, founders are finally free to lead.",
+    quote: [
+      "I built Zero2One after seeing ambitious founders carry everything themselves: product, vision, momentum, until the organization began to strain under its own growth. Strategy without structure becomes noise, and growth without governance turns fragile.",
+      "Zero2One exists to build the systems that support what founders are already brilliant at creating."
+    ],
     whatTheyBring: [
       "Uttam anchors Zero2One's structural advisory lens. He brings operating model clarity, governance design discipline, and the ability to convert strategic ambition into institutional capability.",
       "For clients, this means reduced founder dependency, defined accountability systems, measurable performance logic, and operating rhythms that endure beyond personality. His role is to ensure that growth does not outpace structure, and that organizations mature intentionally, not accidentally."

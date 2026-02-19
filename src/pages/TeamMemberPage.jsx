@@ -135,7 +135,11 @@ export default function TeamMemberPage() {
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl mb-8">In Their Words</h2>
           <blockquote className="border-l-2 border-[var(--color-accent)] pl-6">
-            <p className="font-serif text-2xl md:text-3xl leading-snug text-[var(--color-text)]">"{member.quote}"</p>
+            {(Array.isArray(member.quote) ? member.quote : [member.quote]).map((para, i, arr) => (
+              <p key={i} className="font-serif text-2xl md:text-3xl leading-snug text-[var(--color-text)] mb-4 last:mb-0">
+                {i === 0 ? `"${para}` : para}{i === arr.length - 1 ? '"' : ''}
+              </p>
+            ))}
           </blockquote>
         </div>
       </section>
