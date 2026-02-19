@@ -30,24 +30,26 @@ const team = [
     credentials: "BE, MLM, MBL, MBA, PhD",
     role: "Partner",
     domain: "Training & Academic Excellence",
-    bio: "Built leadership development programs across corporate and academic institutions for 15+ years. Published researcher on competency frameworks and leadership dynamics. Brings the rigor of academic methodology to the practical problem of making leaders actually lead better.",
+    bio: "Dr. Hema Harsha is an academic leader and training strategist with over 25 years of combined industry and academic experience. With a rare blend of engineering, business law, HRM, and doctoral research in talent sustainability, she operates at the intersection of leadership development, governance, compliance, and capability design. Her work spans corporate training, higher education leadership, HR audits, DEI advisory, and behavioral capability building — making her central to Zero2One's leadership and institutional training engagements.",
     initials: "HH",
     linkedin: "https://www.linkedin.com/in/dr-hema-harsha/",
-    previously: ["LCC Infotech", "MP Birla Institute of Management"],
+    previously: ["MP Birla Institute of Management", "IMT Ghaziabad", "Tech Mahindra", "AXA", "HiDesign", "Accenture", "EMC²", "Deutsche Bank", "North Dakota State University"],
     experience: [
-      "15+ years designing and delivering leadership development programs across corporate and academic institutions",
-      "Doctoral research on competency frameworks and leadership dynamics",
-      "Faculty and institutional capacity building at MP Birla Institute of Management",
-      "Corporate training and organizational behavior consulting at LCC Infotech"
+      "25+ years across academia and corporate leadership roles in HR, compliance, and training",
+      "Associate Professor teaching HR Audit, Talent Management, Business Law, L&D, Industrial Relations, and Business Analytics",
+      "Conducted leadership, behavioral, POSH, DEI, and professional skills training for major corporate organizations",
+      "Published 20+ peer-reviewed research papers in UGC Care, Scopus-indexed, and international journals",
+      "Served in governance roles including ICC Chairperson, IQAC Coordinator, Editorial Board Member, and Journal Reviewer"
     ],
     accomplishments: [
-      "Published researcher on competency frameworks, leadership dynamics, and organizational behavior",
-      "Co-authored research on Hitt's Competencies and 21st-century leadership capabilities",
-      "Designed leadership development curricula adopted by corporate and academic institutions",
-      "PhD-level rigor applied to practical leadership assessment and development programs"
+      "Doctoral research on 'Talent Sustainability in Scientific Institutions,' contributing to institutional talent retention frameworks",
+      "Delivered structured training programs across corporates including Tech Mahindra, Accenture, AXA, and Deutsche Bank",
+      "Led POSH and compliance awareness programs aligned with UGC and AICTE frameworks",
+      "Awarded Best Paper recognitions at international conferences on leadership, AI-driven HR, and sustainability themes",
+      "Conducted faculty audits and academic reviews at North Dakota State University (USA), strengthening academic governance standards"
     ],
-    quote: "Leadership is not a title. It is a set of capabilities that can be measured, developed, and held accountable.",
-    whatTheyBring: "The bridge between academic rigor and practical leadership development. Hema brings research-backed methodology to the problem of building leaders who can actually lead, not just manage."
+    quote: "Organizations don't sustain performance through policies alone — they sustain it through capable leaders, ethical systems, and a culture that can adapt.",
+    whatTheyBring: "Dr. Hema anchors Zero2One's leadership development and training architecture. She brings academic rigor, regulatory understanding, behavioral training depth, and structured capability design to client engagements. For Zero2One clients, this translates into leadership development frameworks, compliant governance training (POSH/DEI), HR audits, talent sustainability design, and institutional capability building that goes beyond surface-level workshops — embedding learning into organizational systems."
   },
   {
     slug: "shrigauri-naidu",
