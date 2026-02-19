@@ -95,7 +95,9 @@ export default function TeamMemberPage() {
       <section className="pb-16 md:pb-24">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl mb-2">About</h2>
-          <p className="text-[var(--color-text-muted)] text-lg leading-relaxed">{member.bio}</p>
+          {(Array.isArray(member.bio) ? member.bio : [member.bio]).map((para, i) => (
+            <p key={i} className="text-[var(--color-text-muted)] text-lg leading-relaxed mb-4 last:mb-0">{para}</p>
+          ))}
           {member.previously && (
             <p className="text-sm text-[var(--color-text-muted)] mt-6 pt-4 border-t border-[var(--color-border)]">
               <span className="tracking-widest uppercase text-xs">Previously:</span> {member.previously.join(' · ')}
@@ -142,7 +144,9 @@ export default function TeamMemberPage() {
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-3xl md:text-4xl mb-2">What They Bring</h2>
-          <p className="text-[var(--color-text-muted)] text-lg leading-relaxed">{member.whatTheyBring}</p>
+          {(Array.isArray(member.whatTheyBring) ? member.whatTheyBring : [member.whatTheyBring]).map((para, i) => (
+            <p key={i} className="text-[var(--color-text-muted)] text-lg leading-relaxed mb-4 last:mb-0">{para}</p>
+          ))}
         </div>
       </section>
     </div>
