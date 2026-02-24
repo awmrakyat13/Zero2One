@@ -81,10 +81,15 @@ export default function TeamMemberPage() {
                   </a>
                 )}
               </div>
-              <p className="text-xs text-[var(--color-text-muted)] mb-1">{member.credentials}</p>
+              <p className="text-sm text-[var(--color-text-muted)] mb-0.5 font-medium tracking-wide">
+                {member.displayCredentials || member.credentials}
+              </p>
+              {member.credentialNote && (
+                <p className="text-xs text-[var(--color-text-muted)] opacity-70 mb-2 max-w-lg leading-snug">{member.credentialNote}</p>
+              )}
               <p className="text-lg text-[var(--color-accent)]">
                 {member.role}
-                {member.domain && <><span className="text-[var(--color-border)]">|</span>{member.domain}</>}
+                {member.domain && <><span className="text-[var(--color-border)]"> | </span>{member.domain}</>}
               </p>
             </div>
           </div>

@@ -3,6 +3,8 @@ const team = [
     slug: "lt-col-l-shri-harsha",
     name: "Lt Col L Shri Harsha (retd)",
     credentials: "BE, MBA, MBL, PMP, PgMP, DASSM",
+    displayCredentials: "PgMP · PMP",
+    credentialNote: "PgMP (Program Management Professional) and PMP (Project Management Professional) — the most rigorous program and project management certifications from PMI, held by fewer than 1% of practitioners globally.",
     role: "Partner",
     domain: "Strategy & Leadership",
     bio: [
@@ -32,6 +34,8 @@ const team = [
     slug: "dr-hema-harsha",
     name: "Dr. Hema Harsha",
     credentials: "BE, MLM, MBL, MBA, PhD",
+    displayCredentials: "PhD · MBA",
+    credentialNote: "Doctoral research in talent sustainability combined with postgraduate qualifications in management and law — bringing academic depth, regulatory fluency, and behavioral training expertise to every engagement.",
     role: "Partner",
     domain: "Training & Academic Excellence",
     bio: [
@@ -65,6 +69,8 @@ const team = [
     slug: "shrigauri-naidu",
     name: "Shrigauri Naidu",
     credentials: "BBA, MBA, PMP",
+    displayCredentials: "PMP · MBA",
+    credentialNote: "PMP certification (Project Management Professional) combined with hands-on experience building training systems at Amazon and Toast — structured methodology applied to real-world capability development.",
     role: "Partner",
     domain: "Training & Development",
     bio: [
@@ -94,6 +100,8 @@ const team = [
     slug: "dr-n-muniraju",
     name: "Dr. N. Muniraju",
     credentials: "B.Sc, M.Sc, Ph.D, CAIIB I & II",
+    displayCredentials: "PhD · CAIIB",
+    credentialNote: "CAIIB (Certified Associate of the Indian Institute of Bankers) is the premier certification for senior banking professionals in India. Combined with a PhD in management, it reflects three decades of institutional finance expertise.",
     role: "Partner",
     domain: "Financial Governance & Institutional Systems",
     bio: [
@@ -127,6 +135,8 @@ const team = [
     slug: "uttam-shri-harsha",
     name: "Uttam S",
     credentials: "BE, MS, MBA, PMP",
+    displayCredentials: "MBA · PMP",
+    credentialNote: "MBA and PMP certification underpinning hands-on experience designing operating systems across Amazon, AWS, Toast, and global enterprises — bringing structured methodology to organizational design and governance.",
     role: "Founder",
     domain: "Operations & Organizational Design",
     bio: [

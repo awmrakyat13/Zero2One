@@ -1,8 +1,21 @@
-const impactMetrics = [
-  { value: '50+', label: 'Engagements Delivered' },
-  { value: '12', label: 'Industries Covered' },
-  { value: '15,000+', label: 'Professionals Impacted' },
-  { value: '30+', label: 'Years of Combined Experience' },
-];
+const impactMetrics = {
+  engagements: '50+',
+  industries: [
+    'Real estate',
+    'B2B services',
+    'Financial services',
+    'Infrastructure',
+    'Technology',
+    'Education',
+    'FMCG',
+    'Healthcare',
+    'Manufacturing',
+    'Professional services',
+    'Retail',
+    'Banking & institutional'
+  ],
+  geographyNote: 'Bengaluru-based, national reach',
+  experience: '30+',
+};
 
 export default impactMetrics;

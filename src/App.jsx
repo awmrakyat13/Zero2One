@@ -11,6 +11,7 @@ import ResearchPage from './pages/ResearchPage';
 import impactMetrics from './data/impactMetrics';
 import team from './data/team';
 import TeamMemberPage from './pages/TeamMemberPage';
+import testimonials from './data/testimonials';
 
 
 function Navigation() {
@@ -142,9 +143,15 @@ function HomePage() {
       </section>
 
       {/* Qualifier Line */}
-      <p className="text-center text-sm tracking-[0.15em] uppercase text-[var(--color-text-muted)] py-4 px-6">
-        For founders, CXOs, and leadership teams building companies that have outgrown how they operate.
-      </p>
+      <div className="text-center py-6 px-6 border-b border-[var(--color-border)]">
+        <p className="text-sm tracking-[0.12em] uppercase text-[var(--color-text-muted)] mb-1">
+          For founders and CXOs in India running companies between 50 and 500 people,
+          or managing complexity their current structure wasn't built for.
+        </p>
+        <p className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] opacity-60">
+          Based in Bengaluru. Engagements across India.
+        </p>
+      </div>
 
       {/* What We Install */}
       <section id="offerings" className="py-16 md:py-24 bg-[var(--color-bg-alt)]">
@@ -164,14 +171,19 @@ function HomePage() {
                 aria-expanded={expandedCard === index}
                 onKeyDown={(e) => e.key === 'Enter' && setExpandedCard(expandedCard === index ? null : index)}
               >
-                <div className="flex justify-between items-start mb-3">
-                  <h3 className="font-serif text-2xl md:text-3xl">{item.title}</h3>
+                <div className="flex justify-between items-start mb-1">
+                  <div>
+                    <h3 className="font-serif text-2xl md:text-3xl">{item.title}</h3>
+                    {item.subtitle && (
+                      <p className="text-xs tracking-widest uppercase text-[var(--color-text-muted)] mt-1 opacity-70">{item.subtitle}</p>
+                    )}
+                  </div>
                   <ChevronDown
                     size={20}
-                    className={`text-[var(--color-text-muted)] mt-2 transition-transform ${expandedCard === index ? 'rotate-180' : ''}`}
+                    className={`text-[var(--color-text-muted)] mt-2 transition-transform shrink-0 ml-4 ${expandedCard === index ? 'rotate-180' : ''}`}
                   />
                 </div>
-                <p className="text-[var(--color-text-muted)] leading-relaxed">{item.summary}</p>
+                <p className="text-[var(--color-text-muted)] leading-relaxed mt-3">{item.summary}</p>
                 {expandedCard === index && (
                   <div className="fade-in">
                     <ul className="mt-6 space-y-2">
@@ -181,6 +193,20 @@ function HomePage() {
                         </li>
                       ))}
                     </ul>
+                    {(item.deliverable || item.duration) && (
+                      <div className="mt-6 pt-5 border-t border-[var(--color-border)] space-y-1">
+                        {item.deliverable && (
+                          <p className="text-xs text-[var(--color-text-muted)]">
+                            <span className="uppercase tracking-widest opacity-60">Typical output: </span>{item.deliverable}
+                          </p>
+                        )}
+                        {item.duration && (
+                          <p className="text-xs text-[var(--color-text-muted)]">
+                            <span className="uppercase tracking-widest opacity-60">Timeline: </span>{item.duration}
+                          </p>
+                        )}
+                      </div>
+                    )}
                     <Link
                       to={`/services/${item.slug}`}
                       onClick={(e) => e.stopPropagation()}
@@ -244,9 +270,15 @@ function HomePage() {
       </section>
 
       {/* Social Proof Strip */}
-      <div className="py-6 text-center">
-        <p className="text-lg md:text-xl text-[var(--color-accent)] tracking-wide">
-          {impactMetrics[0].value} engagements across {impactMetrics[1].value} industries. {impactMetrics[2].value} professionals impacted.
+      <div className="py-8 text-center px-6 border-y border-[var(--color-border)]">
+        <p className="text-lg md:text-xl text-[var(--color-accent)] tracking-wide mb-3">
+          {impactMetrics.engagements} engagements across India
+          <span className="mx-3 opacity-40">·</span>
+          {impactMetrics.geographyNote}
+        </p>
+        <p className="text-sm text-[var(--color-text-muted)] tracking-wide">
+          {impactMetrics.industries.slice(0, 6).join(' · ')}
+          {impactMetrics.industries.length > 6 && <span className="opacity-60"> · and more</span>}
         </p>
       </div>
 
@@ -268,17 +300,49 @@ function HomePage() {
             ))}
           </div>
           <div className="border-t border-[var(--color-border)] pt-8">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
               {[
-                { title: "One-time Engagements", desc: "A defined scope, a fixed timeline, a clear deliverable. For companies that know what's broken." },
-                { title: "Ongoing Advisory Retainers", desc: "Monthly strategic counsel for leadership teams navigating growth, transitions, or complexity they haven't seen before." },
-                { title: "Embedded Execution", desc: "We put someone in the room, working alongside your team, building systems in real time. For when the problem is too deep for advice alone." }
+                {
+                  title: "One-time Engagements",
+                  desc: "A defined scope, a fixed timeline, a clear deliverable. For companies that know what's broken.",
+                  bestFor: "Companies that know what's broken and need it fixed.",
+                  duration: "4–12 weeks"
+                },
+                {
+                  title: "Ongoing Advisory Retainers",
+                  desc: "Monthly strategic counsel for leadership teams navigating growth, transitions, or complexity they haven't seen before.",
+                  bestFor: "Leadership teams navigating ongoing complexity.",
+                  duration: "3–12 month engagements"
+                },
+                {
+                  title: "Embedded Execution",
+                  desc: "We put someone in the room, working alongside your team, building systems in real time. For when the problem is too deep for advice alone.",
+                  bestFor: "Problems too deep for advice alone.",
+                  duration: "3–6 months minimum"
+                }
               ].map((model, i) => (
-                <div key={i}>
+                <div key={i} className="border border-[var(--color-border)] p-6">
                   <h3 className="font-medium mb-2">{model.title}</h3>
-                  <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">{model.desc}</p>
+                  <p className="text-sm text-[var(--color-text-muted)] leading-relaxed mb-4">{model.desc}</p>
+                  <div className="space-y-1 pt-3 border-t border-[var(--color-border)]">
+                    <p className="text-xs text-[var(--color-text-muted)]">
+                      <span className="uppercase tracking-widest opacity-60">Best for: </span>{model.bestFor}
+                    </p>
+                    <p className="text-xs text-[var(--color-text-muted)]">
+                      <span className="uppercase tracking-widest opacity-60">Typical duration: </span>{model.duration}
+                    </p>
+                  </div>
                 </div>
               ))}
+            </div>
+            <div className="text-center pt-4 border-t border-[var(--color-border)]">
+              <p className="text-sm text-[var(--color-text-muted)] mb-3">All engagements are scoped and priced based on complexity and duration.</p>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="inline-flex items-center gap-2 text-sm text-[var(--color-accent)] hover:text-[var(--color-text)] transition-colors"
+              >
+                Talk to us to scope your engagement <ArrowRight size={14} />
+              </button>
             </div>
           </div>
         </div>
@@ -290,6 +354,9 @@ function HomePage() {
           <div className="mb-8">
             <h2 className="font-serif text-4xl md:text-5xl mb-2">Who's in the Room</h2>
             <p className="text-[var(--color-text-muted)] text-lg max-w-2xl">Industry practitioners with institutional depth, from Amazon and high-growth startups to military operations and published research.</p>
+            <p className="text-sm text-[var(--color-text-muted)] mt-3 pt-3 border-t border-[var(--color-border)] max-w-2xl">
+              Engagements are led directly by partners — not handed to junior analysts.
+            </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {team.map((member, index) => (
@@ -299,10 +366,15 @@ function HomePage() {
                 </div>
                 <div className="min-w-0">
                   <h3 className="font-medium mb-1">{member.name}</h3>
-                  <p className="text-xs text-[var(--color-text-muted)] mb-1">{member.credentials}</p>
-                  <p className="text-sm text-[var(--color-accent)] mb-3">
+                  <p className="text-xs text-[var(--color-text-muted)] mb-0.5 font-medium tracking-wide">
+                    {member.displayCredentials || member.credentials}
+                  </p>
+                  {member.credentialNote && (
+                    <p className="text-xs text-[var(--color-text-muted)] opacity-70 mb-1 leading-snug">{member.credentialNote}</p>
+                  )}
+                  <p className="text-sm text-[var(--color-accent)] mb-3 mt-1">
                     {member.role}
-                    {member.domain && <><span className="text-[var(--color-border)]">|</span>{member.domain}</>}
+                    {member.domain && <><span className="text-[var(--color-border)]"> | </span>{member.domain}</>}
                   </p>
                   <Link
                     to={`/team/${member.slug}`}
@@ -313,6 +385,22 @@ function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Testimonials */}
+          <div className="mt-12 border-t border-[var(--color-border)] pt-12">
+            <h3 className="font-serif text-3xl md:text-4xl mb-8">What Clients Say</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              {testimonials.map((item, i) => (
+                <div key={i} className="bg-[var(--color-bg)] border border-[var(--color-border)] p-6 flex flex-col justify-between">
+                  <p className="text-[var(--color-text-muted)] text-sm leading-relaxed mb-6 italic">"{item.quote}"</p>
+                  <div className="border-t border-[var(--color-border)] pt-4">
+                    <p className="text-sm font-medium">— {item.name}</p>
+                    <p className="text-xs text-[var(--color-text-muted)]">{item.title}, {item.company}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Research & Contributions */}
