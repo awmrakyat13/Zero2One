@@ -369,8 +369,10 @@ function HomePage() {
                   <p className="text-xs text-[var(--color-text-muted)] mb-0.5 font-medium tracking-wide">
                     {member.displayCredentials || member.credentials}
                   </p>
-                  {member.credentialNote && (
-                    <p className="text-xs text-[var(--color-text-muted)] opacity-70 mb-1 leading-snug">{member.credentialNote}</p>
+                  {member.displayPreviously && (
+                    <p className="text-xs text-[var(--color-text-muted)] opacity-70 mb-1 leading-snug">
+                      Previously: {member.displayPreviously.join(' · ')}
+                    </p>
                   )}
                   <p className="text-sm text-[var(--color-accent)] mb-3 mt-1">
                     {member.role}

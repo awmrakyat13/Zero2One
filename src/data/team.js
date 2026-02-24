@@ -12,6 +12,7 @@ const team = [
     ],
     initials: "LSH",
     linkedin: "https://www.linkedin.com/in/ltcol-l-shriharsha-retd/",
+    displayPreviously: ["Indian Army", "PMI", "AECOM"],
     previously: ["Indian Army", "PMI", "AECOM", "Jacobs CES"],
     experience: [
       "20+ years in the Indian Army leading complex operations, strategic planning, and large-scale program execution",
@@ -44,6 +45,7 @@ const team = [
     ],
     initials: "HH",
     linkedin: "https://www.linkedin.com/in/dr-hema-harsha/",
+    displayPreviously: ["Tech Mahindra", "Accenture", "Deutsche Bank"],
     previously: ["MP Birla Institute of Management", "IMT Ghaziabad", "Tech Mahindra", "AXA", "HiDesign", "Accenture", "EMC²", "Deutsche Bank", "North Dakota State University"],
     experience: [
       "25+ years across academia and corporate leadership roles in HR, compliance, and training",
@@ -78,6 +80,7 @@ const team = [
     ],
     initials: "SN",
     linkedin: "https://www.linkedin.com/in/shrigaurinaidu/",
+    displayPreviously: ["Amazon", "Toast"],
     previously: ["Amazon", "Toast"],
     experience: [
       "Built and scaled training programs at Amazon, one of the world's most operationally rigorous companies",
@@ -110,6 +113,7 @@ const team = [
     ],
     initials: "NM",
     linkedin: null,
+    displayPreviously: ["Bank of Maharashtra"],
     previously: ["Bank of Maharashtra"],
     experience: [
       "Led large-scale zonal banking operations across Mumbai, Bengaluru, and Goa, overseeing diverse retail, MSME, and corporate portfolios",
@@ -145,6 +149,7 @@ const team = [
     ],
     initials: "UH",
     linkedin: "https://www.linkedin.com/in/uttam-s/",
+    displayPreviously: ["Amazon Web Services", "Toast", "Newell Brands"],
     previously: ["Toast Inc.", "Amazon Web Services", "Newell Brands Inc.", "Amazon Retail", "Amazon Launchpad", "Costco"],
     experience: [
       "Designed and led multi-country operating systems across distributed global teams",
